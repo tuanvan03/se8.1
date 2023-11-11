@@ -25,8 +25,8 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.DEFAULT_YELLOW,
   },
   image: {
-    height: (150),
-    width: (150),
+    height: (500),
+    width: (500),
   },
   titleText: {
     color: Colors.DEFAULT_WHITE,

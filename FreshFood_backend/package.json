@@ -13,5 +13,10 @@
     "jade": "^0.29.0",
     "mongodb": "^6.3.0",
     "morgan": "~1.9.1"
+  }, 
+  "projectConfig": {
+    "mongoConnectionUrl": "mongodb://localhost:27017",
+    "serverIp": "localhost",
+    "serverPort": 3000
   }
 }

@@ -50,41 +50,42 @@ const userRegister = async (user) => {
         };
     }
 };
+
 const userLogin = async (user) => {
     try {
-      if (!user?.username || !user?.password)
-        return { status: false, message: "Please fill up all the fields" };
-      let userObject = await MongoDB.db
-        .collection(mongoConfig.collections.USERS)
-        .findOne({ username: user?.username });
-      if (userObject) {
-        let isPasswordVerfied = await bcrypt.compare(
-          user?.password,
-          userObject?.password
-        );
-        if (isPasswordVerfied) {
-          let token = jwt.sign(
-            { username: userObject?.username, email: userObject?.email },
-            tokenSecret,
-            { expiresIn: "24h" }
-          );
-          return {
-            status: true,
-            message: "User login successful",
-            data: token,
-          };
+        if (!user?.username || !user?.password)
+            return { status: false, message: "Please fill up all the fields" };
+        let userObject = await MongoDB.db
+            .collection(mongoConfig.collections.USERS)
+            .findOne({ username: user?.username });
+        if (userObject) {
+            let isPasswordVerfied = await bcrypt.compare(
+            user?.password,
+            userObject?.password
+            );
+            if (isPasswordVerfied) {
+                let token = jwt.sign(
+                    { username: userObject?.username, email: userObject?.email },
+                    tokenSecret,
+                    { expiresIn: "24h" }
+                );
+                return {
+                    status: true,
+                    message: "User login successful",
+                    data: token,
+                };
+            } else {
+                return {
+                    status: false,
+                    message: "Incorrect password",
+                };
+            }
         } else {
-          return {
+            return {
             status: false,
-            message: "Incorrect password",
-          };
+            message: "No user found",
+            };
         }
-      } else {
-        return {
-          status: false,
-          message: "No user found",
-        };
-      }
     } catch (error) {
       console.log(error);
       return {
@@ -93,5 +94,6 @@ const userLogin = async (user) => {
         error: error?.toString(),
       };
     }
-  };
+};
+
 module.exports = {userRegister, userLogin};

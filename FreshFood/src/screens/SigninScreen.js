@@ -8,10 +8,6 @@ import {Display} from '../utils';
 
 const SigninScreen = ({navigation}) => {
     const [isPasswordShow, setIsPasswordShow] = useState(false);
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-    const [errorMessage, setErrorMessage] = useState('');
     return (
         <View style={styles.container}>
           <StatusBar
@@ -45,7 +41,6 @@ const SigninScreen = ({navigation}) => {
                 placeholderTextColor={Colors.DEFAULT_GREY}
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
-                onChangeText={text => setUsername(text)}
               />
             </View>
           </View>
@@ -64,7 +59,6 @@ const SigninScreen = ({navigation}) => {
                 placeholderTextColor={Colors.DEFAULT_GREY}
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
-                onChangeText={text => setPassword(text)}
               />
               <Feather
                 name={isPasswordShow ? 'eye' : 'eye-off'}
@@ -75,7 +69,6 @@ const SigninScreen = ({navigation}) => {
               />
             </View>
           </View>
-          <Text style={styles.errorMessage}>{errorMessage}</Text>
           <View style={styles.forgotPasswordContainer}>
             <View style={styles.toggleContainer}>
               <ToggleButton size={0.5} />
@@ -91,11 +84,7 @@ const SigninScreen = ({navigation}) => {
             style={styles.signinButton}
             onPress={() => signIn()}
             activeOpacity={0.8}>
-            {isLoading ? (
-              <LottieView source={Images.LOADING} autoPlay />
-            ) : (
               <Text style={styles.signinButtonText}>Sign In</Text>
-            )}
           </TouchableOpacity>
           <View style={styles.signupContainer}>
             <Text style={styles.accountText}>Don't have an account?</Text>
@@ -194,6 +183,7 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         fontSize: 12,
         lineHeight: 12 * 1.4,
+        marginVertical: 10,
         color: Colors.DEFAULT_GREY,
         fontFamily: Fonts.POPPINS_MEDIUM,
       },

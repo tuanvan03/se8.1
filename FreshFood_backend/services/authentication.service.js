@@ -51,10 +51,10 @@ const userRegister = async (user) => {
             message: errorMessage,
             error: error?.toString(),
 
+
         };
     }
 };
-
 
 const userLogin = async (user) => {
     try {

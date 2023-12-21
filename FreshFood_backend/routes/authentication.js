@@ -1,18 +1,21 @@
 var express = require('express');
 var router = express.Router();
-const { userRegister } = require('../services/authentication.service');
-// Handles POST requests to '/register'
-router.post('/register', async (req, res, next) => {
-  // Extracts the request body
+
+const {
+  userRegister,
+  userLogin
+} = require("../services/authentication.service");
+
+router.post('/register', async(req, res, next) => {
   let body = req.body;
-
-  // Logs the request body to the console
-  let respond = await userRegister(body);
-
-  // Sends the request body as a JSON response
-  res.json(respond);
-
+  let response = await userRegister(body);
+  res.json(response);
 });
 
-// Export the router to be used in other parts of the application
+router.post('/login', async(req, res, next) => {
+  let body = req.body;
+  let response = await userLogin(body);
+  res.json(response);
+});
+
 module.exports = router;

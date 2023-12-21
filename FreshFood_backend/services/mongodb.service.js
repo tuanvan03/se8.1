@@ -27,4 +27,3 @@ MongoDB.db = null;
 
 // Exporting the MongoDB class for external use
 module.exports = MongoDB;
-

@@ -1,4 +1,5 @@
 const MongoDB = require("./mongodb.service");
+
 const { mongoConfig, tokenSecret } = require("../config");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -32,10 +33,12 @@ const userRegister = async (user) => {
             return {
                 status: false,
                 message: "User registered failed",
+
             };
         }
     } catch (error) {
         console.log(error);
+
         let errorMessage = "User registered failed";
         error?.code === 11000 && error?.keyPattern?.username
             ? (errorMessage = "Username already exist")
@@ -47,9 +50,11 @@ const userRegister = async (user) => {
             status: false,
             message: errorMessage,
             error: error?.toString(),
+
         };
     }
 };
+
 
 const userLogin = async (user) => {
     try {
@@ -97,3 +102,6 @@ const userLogin = async (user) => {
 };
 
 module.exports = {userRegister, userLogin};
+
+
+

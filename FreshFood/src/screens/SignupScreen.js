@@ -5,9 +5,30 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import {Colors, Fonts, Images} from '../contants';
 import {Display} from '../utils';
+import { AuthenticationService } from "../services";
 
 const SignupScreen = ({navigation}) => {
+    const register = () => {
+      let user = {
+        username, 
+        email, 
+        password,
+      };
+      console.log(user);
+      AuthenticationService.register(user).then(response => {
+        console.log(response);
+        if (!response?.status) {
+          setErrorMessage(response?.message);
+        }
+      });
+      // navigation.navigate("RegisterPhone")
+    };
     const [isPasswordShow, setIsPasswordShow] = useState(false);
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errorMessage, setErrorMessage] = useState('')
+
     return (
         <View style={styles.container}>
           <StatusBar
@@ -41,6 +62,7 @@ const SignupScreen = ({navigation}) => {
                 placeholderTextColor={Colors.DEFAULT_GREY}
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
+                onChangeText={(text) => setUsername(text)}
               />
             </View>
           </View>
@@ -57,6 +79,7 @@ const SignupScreen = ({navigation}) => {
                 placeholderTextColor={Colors.DEFAULT_GREY}
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
+                onChangeText={(text) => setEmail(text)}
               />
             </View>
           </View>
@@ -74,6 +97,7 @@ const SignupScreen = ({navigation}) => {
                 placeholderTextColor={Colors.DEFAULT_GREY}
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
+                onChangeText={(text) => setPassword(text)}
               />
               <Feather
                 name={isPasswordShow ? 'eye' : 'eye-off'}
@@ -84,7 +108,8 @@ const SignupScreen = ({navigation}) => {
               />
             </View>
           </View>
-          <TouchableOpacity style={styles.signinButton} onPress={() => navigation.navigate("RegisterPhone")} >
+          <Text style ={styles.errorMessage}>{errorMessage}</Text>
+          <TouchableOpacity style={styles.signinButton} onPress={() => register()} >
               <Text style={styles.signinButtonText}>Create Account</Text>
           </TouchableOpacity>
           <Text style={styles.orText}>OR</Text>
@@ -231,7 +256,7 @@ const styles = StyleSheet.create({
         width: 18,
       },
       errorMessage: {
-        fontSize: 10,
+        fontSize: 13,
         lineHeight: 10 * 1.4,
         color: Colors.DEFAULT_RED,
         fontFamily: Fonts.POPPINS_MEDIUM,

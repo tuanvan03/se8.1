@@ -101,6 +101,22 @@ const userLogin = async (user) => {
     }
 };
 
-module.exports = {userRegister, userLogin};
+const checkUserExist = async (query) => {
+    let messages = {
+      email: "Email đã được dùng !!!",
+      username: "Tên người dùng đã tồn tại !!!",
+    };
+    try {
+      let queryType = Object.keys(query)[0];
+      let userObject = await MongoDB.db
+        .collection(mongoConfig.collections.USERS)
+        .findOne(query);
+      return !userObject
+        ? { status: true, message: `This ${queryType} is not taken` }
+        : { status: false, message: messages[queryType] };
+    } catch (error) {}
+  };
+
+module.exports = {userRegister, userLogin, checkUserExist};
 
 

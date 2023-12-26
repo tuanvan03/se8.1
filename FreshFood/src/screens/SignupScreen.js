@@ -3,11 +3,68 @@ import { View, Text, StyleSheet, StatusBar, TextInput, TouchableOpacity, Image }
 import { Separator} from "../components";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {Colors, Fonts, Images} from '../contants';
 import {Display} from '../utils';
 import { AuthenticationService } from "../services";
+import LottieView from 'lottie-react-native';
+
+const inputStyle = state => {
+  switch (state) {
+    case 'valid':
+      return {
+        ...styles.inputContainer,
+        borderWidth: 1,
+        borderColor: Colors.SECONDARY_GREEN,
+      };
+    case 'invalid':
+      return {
+        ...styles.inputContainer,
+        borderWidth: 1,
+        borderColor: Colors.DEFAULT_RED,
+      };
+    default:
+      return styles.inputContainer;
+  }
+};
+
+const showMarker = state => {
+  switch (state) {
+    case 'valid':
+      return (
+        <AntDesign
+          name="checkcircleo"
+          color={Colors.SECONDARY_GREEN}
+          size={18}
+          style={{marginLeft: 5}}
+        />
+      );
+    case 'invalid':
+      return (
+        <AntDesign
+          name="closecircleo"
+          color={Colors.DEFAULT_RED}
+          size={18}
+          style={{marginLeft: 5}}
+        />
+      );
+    default:
+      return null;
+  }
+};
 
 const SignupScreen = ({navigation}) => {
+  const [isPasswordShow, setIsPasswordShow] = useState(false);
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [usernameErrorMessage, setUsernameErrorMessage] = useState('');
+  const [emailErrorMessage, setEmailErrorMessage] = useState('');
+  const [emailState, setEmailState] = useState('default');
+  const [usernameState, setUsernameState] = useState('default');
+
     const register = () => {
       let user = {
         username, 
@@ -15,7 +72,9 @@ const SignupScreen = ({navigation}) => {
         password,
       };
       console.log(user);
+      setIsLoading(true);
       AuthenticationService.register(user).then(response => {
+        setIsLoading(false);
         console.log(response);
         if (!response?.status) {
           setErrorMessage(response?.message);
@@ -23,11 +82,31 @@ const SignupScreen = ({navigation}) => {
       });
       // navigation.navigate("RegisterPhone")
     };
-    const [isPasswordShow, setIsPasswordShow] = useState(false);
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [errorMessage, setErrorMessage] = useState('')
+
+    const checkUserExist = async (type, value) => {
+      if (value?.length > 0) {
+        AuthenticationService.checkUserExist(type, value).then(response => {
+          if (response?.status) {
+            type === 'email' && emailErrorMessage
+              ? setEmailErrorMessage('')
+              : null;
+  
+            type === 'username' && usernameErrorMessage
+              ? setUsernameErrorMessage('')
+              : null;
+            type === 'email' ? setEmailState('valid') : null;
+            type === 'username' ? setUsernameState('valid') : null;
+          } else {
+            type === 'email' ? setEmailErrorMessage(response?.message) : null;
+            type === 'username'
+              ? setUsernameErrorMessage(response?.message)
+              : null;
+            type === 'email' ? setEmailState('invalid') : null;
+            type === 'username' ? setUsernameState('invalid') : null;
+          }
+        });
+      }
+    };
 
     return (
         <View style={styles.container}>
@@ -49,7 +128,7 @@ const SignupScreen = ({navigation}) => {
           <Text style={styles.content}>
             Enter your email, choose a username and password
           </Text>
-          <View style={styles.inputContainer}>
+          <View style = {inputStyle(usernameState)}>
             <View style={styles.inputSubContainer}>
               <Feather
                 name="user"
@@ -63,10 +142,13 @@ const SignupScreen = ({navigation}) => {
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
                 onChangeText={(text) => setUsername(text)}
+                onEndEditing={({nativeEvent: {text}}) => checkUserExist('username', text)}
               />
+              {showMarker(usernameState)}
             </View>
           </View>
-          <View style={styles.inputContainer}>
+          <Text style ={styles.errorMessage}>{usernameErrorMessage}</Text>
+          <View style={inputStyle(emailState)}>
             <View style={styles.inputSubContainer}>
               <Feather
                 name="mail"
@@ -80,9 +162,12 @@ const SignupScreen = ({navigation}) => {
                 selectionColor={Colors.DEFAULT_GREY}
                 style={styles.inputText}
                 onChangeText={(text) => setEmail(text)}
+                onEndEditing={({nativeEvent: {text}}) => checkUserExist('email', text)}
               />
+              {showMarker(emailState)}
             </View>
           </View>
+          <Text style ={styles.errorMessage}>{emailErrorMessage}</Text>
           <View style={styles.inputContainer}>
             <View style={styles.inputSubContainer}>
               <Feather
@@ -110,7 +195,12 @@ const SignupScreen = ({navigation}) => {
           </View>
           <Text style ={styles.errorMessage}>{errorMessage}</Text>
           <TouchableOpacity style={styles.signinButton} onPress={() => register()} >
-              <Text style={styles.signinButtonText}>Create Account</Text>
+              {isLoading ? 
+              (<LottieView source={Images.LOADING} autoPlay loop />) 
+              : 
+              (<Text style={styles.signinButtonText}>Create Account</Text>)
+              }
+              
           </TouchableOpacity>
           <Text style={styles.orText}>OR</Text>
           <TouchableOpacity style={styles.facebookButton}>

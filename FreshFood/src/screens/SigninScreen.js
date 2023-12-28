@@ -5,9 +5,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Feather from 'react-native-vector-icons/Feather';
 import {Colors, Fonts, Images} from '../contants';
 import {Display} from '../utils';
-import { AuthenticationService } from "../services";
+import { AuthenticationService, StorageService } from "../services";
 import LottieView from 'lottie-react-native';
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { GeneralAction } from "../actions";
 
 const SigninScreen = ({navigation, setToken}) => {
@@ -17,6 +17,8 @@ const SigninScreen = ({navigation, setToken}) => {
     const [isLoading, setIsLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
 
+    const dispatch = useDispatch();
+    
     const signIn = async () => {
       setIsLoading(true);
       let user = {
@@ -25,10 +27,13 @@ const SigninScreen = ({navigation, setToken}) => {
       };
       AuthenticationService.login(user).then(response => {
         setIsLoading(false);
-        setToken(response?.data);
         console.log(response);
         if (response?.status) {
-          setErrorMessage(response?.message)
+          StorageService.getToken(response?.data).then(() => {
+            dispatch(GeneralAction.setToken(response?.data));
+          })
+        } else {
+          setErrorMessage(response?.message);
         }
       });
     };
@@ -323,10 +328,5 @@ const styles = StyleSheet.create({
     },
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    setToken: token => dispatch(GeneralAction.setToken(token)),
-  };
-};
 
-export default connect(null , mapDispatchToProps)(SigninScreen) ;
+export default SigninScreen ;

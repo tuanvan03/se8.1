@@ -29,7 +29,7 @@ const SigninScreen = ({navigation, setToken}) => {
         setIsLoading(false);
         console.log(response);
         if (response?.status) {
-          StorageService.getToken(response?.data).then(() => {
+          StorageService.setToken(response?.data).then(() => {
             dispatch(GeneralAction.setToken(response?.data));
           })
         } else {

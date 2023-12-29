@@ -31,7 +31,7 @@ const Navigators = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         {isAppLoading ? (<Stack.Screen name='Splash' component={SplashScreen}/>
-        ) : !token ? (
+        ) : !token || token === '' || token === null ? (
           <>
           {isFirstTimeUse && (<Stack.Screen name='Welcome' component={WelcomeScreen}/>)}
           
@@ -50,4 +50,4 @@ const Navigators = () => {
   );
 };
 
-export default (Navigators) ;
+export default Navigators ;

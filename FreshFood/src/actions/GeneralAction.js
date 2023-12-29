@@ -31,7 +31,7 @@ const types = {
     return (dispatch, getState) => {
       StorageService.getFirstTimeUse().then(isFirstTimeUse => {
         dispatch({
-          type: SET_FIRST_TIME_USE,
+          type: types.SET_FIRST_TIME_USE,
           payload: isFirstTimeUse ? false : true,
         });
       });

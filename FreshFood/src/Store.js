@@ -1,14 +1,10 @@
-// import { createStore} from 'redux';
-// import Reducers from './reducers';
-// const Store = createStore(Reducers);
+import {createStore, applyMiddleware} from 'redux';
+import Reducers from './reducers';
+import {thunk} from 'redux-thunk';
 
-// export default {Store};
-import { configureStore } from '@reduxjs/toolkit';
-import reducers from './reducers';
+const Store = createStore(Reducers, applyMiddleware(thunk));
 
-const store = configureStore({
-  reducer: reducers,
-  // Các tuỳ chọn khác nếu cần
-});
+export default Store;
 
-export default store;
+
+

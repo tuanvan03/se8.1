@@ -1,5 +1,7 @@
 import axios from "axios";
 import { ApiContants } from "../contants";
+import {authHeader} from '../utils/Generator';
+import {getToken} from '../Store';
 
 const AuthRequest = axios.create({
     baseURL: ApiContants.BACKEND_API.BASE_URL,
@@ -59,5 +61,20 @@ const register = async user => {
       return {status: false, message: 'Ầu nâu!!! Săm thing lỗi'};
     }
   };
-
-  export default {register, checkUserExist, login};
+  const refreshToken = async () => {
+    try {
+      let tokenResponse = await AuthRequest.post(
+        ApiContants.BACKEND_API.REFRESH_TOKEN,
+        {headers: authHeader(getToken())},
+      );
+      if (tokenResponse?.status === 200) {
+        return {status: true, data: tokenResponse?.data};
+      } else {
+        return {status: false};
+      }
+    } catch (error) {
+      console.log(error);
+      return {status: false, message: 'Ầu nâu!!! Có lỗi'};
+    }
+  };
+  export default {register, checkUserExist, login, refreshToken};

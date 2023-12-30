@@ -5,8 +5,9 @@ const getUserData = async (username) => {
   try {
     let userObject = await MongoDB.db
       .collection(mongoConfig.collections.USERS)
-      .findOne({ username });
+      .findOne(username);
 
+      console.log(userObject);
     if (userObject) {
       return {
         status: true,
@@ -28,4 +29,4 @@ const getUserData = async (username) => {
   }
 };
 
-module.exports = { getUserData };
+module.exports = {getUserData};

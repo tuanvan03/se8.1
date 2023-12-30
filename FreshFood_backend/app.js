@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var authenticationRouter = require('./routes/authentication');
-var userRoute = require('./routes/user.route');
+var userRouter = require('./routes/user.route');
 const MongoDB = require('./services/mongodb.service'); 
 
 MongoDB.connectToMongoDB();
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api', authenticationRouter);
-app.use('/api/user', userRoute);
+app.use('/api/user', userRouter);
 app.use("*", require('./services/authentication.service').tokenVerification);
 app.use("/refresh-token", require('./services/authentication.service').tokenRefresh);
 // catch 404 and forward to error handler

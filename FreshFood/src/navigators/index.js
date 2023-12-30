@@ -23,10 +23,12 @@ const Navigators = () => {
     state => state?.generalState,
   );
   const dispatch = useDispatch();
-
+  console.log('token: ', token);
   useEffect(() => {
     dispatch(GeneralAction.appStart())
   }, []);
+  console.log('isAppp: ', isAppLoading);
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
@@ -42,7 +44,9 @@ const Navigators = () => {
           <Stack.Screen name='Verification' component={VerificationScreen}/>
           </>
         ) : (
-        <Stack.Screen name='Home' component={HomeScreen}/>
+          <>
+          <Stack.Screen name='Home' component={HomeScreen}/>
+          </>
         )}
         
       </Stack.Navigator>

@@ -18,7 +18,7 @@ const GeneralReducer = (state = initialState,action) => {
         case GeneralAction.types.SET_USER_DATA:
           return {...state, userData: action.payload};
         default:
-        return state;
+          return state;
     }
 }
 

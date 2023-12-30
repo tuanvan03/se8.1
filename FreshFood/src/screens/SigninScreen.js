@@ -168,15 +168,17 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
       },
       headerTitle: {
-        fontSize: 20,
-        fontFamily: Fonts.POPPINS_MEDIUM,
-        lineHeight: 20 * 1.4,
+        fontSize: 25,
+        color: Colors.DEFAULT_BLACK,
+        fontFamily: Fonts.POPPINS_BLACK,
+        lineHeight: 20 * 4,
         width: Display.setWidth(80),
         textAlign: 'center',
       },
       title: {
         fontSize: 20,
         fontFamily: Fonts.POPPINS_MEDIUM,
+        color: Colors.DEFAULT_BLACK,
         lineHeight: 20 * 1.4,
         marginTop: 50,
         marginBottom: 10,
@@ -185,6 +187,7 @@ const styles = StyleSheet.create({
       content: {
         fontSize: 20,
         fontFamily: Fonts.POPPINS_MEDIUM,
+        color: Colors.DEFAULT_BLACK,
         marginTop: 10,
         marginBottom: 20,
         marginHorizontal: 20,

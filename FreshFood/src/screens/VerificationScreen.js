@@ -96,7 +96,7 @@ const VerificationScreen = ({
       </View>
       <TouchableOpacity
         style={styles.signinButton}
-        onPress={() => console.log(otp)}>
+        onPress={() => navigation.navigate('Signin')}>
         <Text style={styles.signinButtonText}>Verify</Text>
       </TouchableOpacity>
     </View>

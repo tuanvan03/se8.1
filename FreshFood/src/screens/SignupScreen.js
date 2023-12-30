@@ -80,7 +80,7 @@ const SignupScreen = ({navigation}) => {
           setErrorMessage(response?.message);
         }
       });
-      // navigation.navigate("RegisterPhone")
+       navigation.navigate("RegisterPhone")
     };
 
     const checkUserExist = async (type, value) => {

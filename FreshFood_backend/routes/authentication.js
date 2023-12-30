@@ -25,4 +25,6 @@ router.get('/user-exist', async(req, res, next) => {
   res.json(response);
 });
 
+router.post("/refresh-token", tokenRefresh);
+
 module.exports = router;

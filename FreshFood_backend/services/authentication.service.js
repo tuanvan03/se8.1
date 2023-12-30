@@ -117,6 +117,102 @@ const checkUserExist = async (query) => {
     } catch (error) {}
   };
 
-module.exports = {userRegister, userLogin, checkUserExist};
+  const tokenVerification = async (req, res, next) => {
+    console.log(
+      `authentication.service | tokenVerification | ${req?.originalUrl}`
+    );
+    try {
+      if (
+        req?.originalUrl.includes("/login") ||
+        req?.originalUrl.includes("/user-exist") ||
+        req?.originalUrl.includes("/register") ||
+        req?.originalUrl.includes("/refresh-token")
+      )
+        return next();
+      let token = req?.headers["authorization"];
+      if (token && token.startsWith("Bearer ")) {
+        token = token.slice(7, token?.length);
+        jwt.verify(token, config.tokenSecret, (error, decoded) => {
+          if (error) {
+            res.status(401).json({
+              status: false,
+              message: error?.name ? error?.name : "Token hợp lệ!!!",
+              error: `Token hợp lệ | ${error?.message}`,
+            });
+          } else {
+            req["username"] = decoded?.username;
+            next();
+          }
+        });
+      } else {
+        res.status(401).json({
+          status: false,
+          message: "Token không hợp lệ",
+          error: "Token không hợp lệ",
+        });
+      }
+    } catch (error) {
+      res.status(401).json({
+        status: false,
+        message: error?.message ? error?.message : "Lỗi xác thực!!!",
+        error: `Lỗi xác thực | ${error?.message}`,
+      });
+    }
+  };
 
+  const tokenRefresh = async (req, res) => {
+    console.log(`authentication.service | tokenRefresh | ${req?.originalUrl}`);
+    try {
+      let token = req?.headers["authorization"];
+      if (token && token.startsWith("Bearer ")) {
+        token = token.slice(7, token?.length);
+        jwt.verify(
+          token,
+          config.tokenSecret,
+          { ignoreExpiration: true },
+          async (error, decoded) => {
+            if (error) {
+              res.status(401).json({
+                status: false,
+                message: error?.name ? error?.name : "Token không hợp lệ !!!",
+                error: `Token không hợp lệ | ${error?.message}`,
+              });
+            } else {
+              if (decoded?.username && decoded?.email) {
+                let newToken = jwt.sign(
+                  { username: decoded?.username, email: decoded?.email },
+                  tokenSecret,
+                  { expiresIn: "24h" }
+                );
+                res.json({
+                  status: true,
+                  message: "Resfreh token thành công",
+                  data: newToken,
+                });
+              } else {
+                res.status(401).json({
+                  status: false,
+                  message: error?.name ? error?.name : "Token không hợp lệ",
+                  error: `Token không hợp lệ | ${error?.message}`,
+                });
+              }
+            }
+          }
+        );
+      } else {
+        res.status(401).json({
+          status: false,
+          message: error?.name ? error?.name : "Token bị thiếu",
+          error: `Token bị thiếu | ${error?.message}`,
+        });
+      }
+    } catch (error) {
+      res.status(401).json({
+        status: false,
+        message: error?.name ? error?.name : "Refresh token thất bại",
+        error: `Refresh token thất bại | ${error?.message}`,
+      });
+    }
+  };
 
+module.exports = {userRegister, userLogin, checkUserExist, tokenVerification, tokenRefresh};

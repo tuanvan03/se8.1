@@ -4,7 +4,8 @@ var router = express.Router();
 const {
   userRegister,
   userLogin, 
-  checkUserExist
+  checkUserExist, 
+  tokenRefresh,
 } = require("../services/authentication.service");
 
 router.post('/register', async(req, res, next) => {

@@ -26,6 +26,7 @@ const getUserData = async () => {
       };
     }
   } catch (error) {
+    console.log(error?.response?.data);
     return {
       status: false,
       message: error?.response?.data?.message

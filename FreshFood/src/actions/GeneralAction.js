@@ -46,11 +46,13 @@ const types = {
       });
       StorageService.getToken().then(token => {
         if (token) {
+          console.log(token);
           dispatch({
             type: types.SET_TOKEN,
             payload: token,
           });
           UserService.getUserData().then(userResponse => {
+            console.log(userResponse);
             if (userResponse?.status) {
               dispatch({
                 type: types.SET_USER_DATA,
@@ -60,6 +62,7 @@ const types = {
                 type: types.SET_IS_APP_LOADING,
                 payload: false,
               });
+              console.log(userResponse?.data);
             } else if (userResponse?.message === 'TokenExpiredError') {
               AuthenicationService.refreshToken().then(tokenResponse => {
                 if (tokenResponse?.status) {

@@ -15,6 +15,45 @@ import {RestaurantService, StaticImageService} from '../services';
 import {Display} from '../utils';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import { useDispatch, useSelector } from 'react-redux';
+import { CartAction } from '../actions';
+
+const ListHeader = () => (
+  <View
+    style={{
+      flexDirection: 'row',
+      flex: 1,
+      width: 40,
+      justifyContent: 'flex-end',
+    }}>
+    <View
+      style={{
+        backgroundColor: Colors.LIGHT_YELLOW,
+        width: 20,
+        borderTopLeftRadius: 64,
+        borderBottomLeftRadius: 64,
+      }}
+    />
+  </View>
+);
+
+const ListFooter = () => (
+  <View
+    style={{
+      flexDirection: 'row',
+      flex: 1,
+      width: 40,
+    }}>
+    <View
+      style={{
+        backgroundColor: Colors.LIGHT_YELLOW,
+        width: 20,
+        borderTopRightRadius: 64,
+        borderBottomRightRadius: 64,
+      }}
+    />
+  </View>
+);
 
 const RestaurantScreen = ({
   navigation,
@@ -25,6 +64,7 @@ const RestaurantScreen = ({
   const [restaurant, setRestaurant] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [isBookmarked, setIsBookmarked] = useState(false);
+
   useEffect(() => {
     RestaurantService.getOneRestaurantById(restaurantId).then(response => {
       setSelectedCategory(response?.data?.categories[0]);
@@ -104,6 +144,8 @@ const RestaurantScreen = ({
                 data={restaurant?.categories}
                 keyExtractor={item => item}
                 horizontal
+                ListHeaderComponent={() => <ListHeader />}
+                ListFooterComponent={() => <ListFooter />}
                 showsHorizontalScrollIndicator={false}
                 renderItem={({item}) => (
                   <CategoryListItem

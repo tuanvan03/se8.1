@@ -1,3 +1,3 @@
 import GeneralAction from './GeneralAction';
-
-export {GeneralAction};
+import CartAction from './CartAction';
+export {GeneralAction , CartAction};

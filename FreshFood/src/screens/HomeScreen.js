@@ -119,8 +119,7 @@ const HomeScreen = ({navigation}) => {
             ItemSeparatorComponent={() => <Separator width={10} />}
             renderItem={({item}) => (
               <RestaurantCard
-                {...item}
-              
+                {...item} navigate={restaurantId => navigation.navigate("Restaurant", {restaurantId})}
               />
             )}
           />

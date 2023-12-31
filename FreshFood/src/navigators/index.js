@@ -30,16 +30,21 @@ const Navigators = () => {
     dispatch(GeneralAction.appStart())
   }, []);
   console.log('isAppp: ', isAppLoading);
+  console.log('isFirst: ', isFirstTimeUse);
   // StorageService.setToken('');
+  // StorageService.setFirstTimeUse().then(() => {
+  //   dispatch(GeneralAction.setIsFirstTimeUse());
+  // })
   // dispatch(GeneralAction.setToken(''));
+  // dispatch(GeneralAction.setUserData(null));
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         {isAppLoading ? (<Stack.Screen name='Splash' component={SplashScreen}/>
         ) : !token || token === '' || token === null ? (
           <>
-          {isFirstTimeUse && (<Stack.Screen name='Welcome' component={WelcomeScreen}/>)}
-          
+          {isFirstTimeUse && (<Stack.Screen name='Welcome' component={WelcomeScreen}/>)} 
+
           <Stack.Screen name='Signin' component={SigninScreen}/>
           <Stack.Screen name='Signup' component={SignupScreen}/>
           <Stack.Screen name='ForgotPassword' component={ForgotPasswordScreen}/>

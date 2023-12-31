@@ -15,6 +15,7 @@ module.exports = {
             // Collection for user data
             USERS: "users",
             RESTAURANTS: "restaurants",
+            CARTS: "carts"
         }
     },
     serverConfig: {

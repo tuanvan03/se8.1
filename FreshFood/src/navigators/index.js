@@ -10,10 +10,11 @@ import {
   RegisterPhoneScreen, 
   VerificationScreen,
   HomeScreen,
-RestaurantScreen,
+  RestaurantScreen,
+  FoodScreen,
 
 } from '../screens';
-
+import HomeTabs from "./BottomTabs"
 import {useSelector, useDispatch } from 'react-redux';
 import { GeneralAction } from '../actions';
 import { StorageService } from '../services';
@@ -25,18 +26,11 @@ const Navigators = () => {
     state => state?.generalState,
   );
   const dispatch = useDispatch();
-  console.log('token: ', token);
+
   useEffect(() => {
     dispatch(GeneralAction.appStart())
   }, []);
-  console.log('isAppp: ', isAppLoading);
-  console.log('isFirst: ', isFirstTimeUse);
-  // StorageService.setToken('');
-  // StorageService.setFirstTimeUse().then(() => {
-  //   dispatch(GeneralAction.setIsFirstTimeUse());
-  // })
-  // dispatch(GeneralAction.setToken(''));
-  // dispatch(GeneralAction.setUserData(null));
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
@@ -53,8 +47,9 @@ const Navigators = () => {
           </>
         ) : (
           <>
-          <Stack.Screen name='Home' component={HomeScreen}/>
+          <Stack.Screen name='HomeTabs' component={HomeTabs}/>
           <Stack.Screen name='Restaurant' component={RestaurantScreen}/>
+          <Stack.Screen name='Food' component={FoodScreen}/>
           </>
         )}
         

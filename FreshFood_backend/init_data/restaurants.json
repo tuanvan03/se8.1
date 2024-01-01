@@ -1,172 +1,240 @@
 [
-    {
-      "id": "100",
-      "name": "McDonalds",
-      "type": "Take-Away",
+  {
+      "id": "1",
+      "name": "Nhà Hàng Đặc Sản Nam Định",
+      "type": "Restaurant",
       "tags": [
-        "burgers",
-        "chicken",
-        "coffee",
-        "tea",
-        "drinks",
-        "pizza",
-        "sesserts",
-        "chocolate",
-        "sundae",
-        "paneer",
-        "nuggets"
+        "Vietnamese",
+        "LocalSpecialties",
+        "Seafood",
+        "Noodles",
+        "SpringRolls",
+        "Pho",
+        "GrilledFish",
+        "RiceDishes",
+        "BanhMi",
+        "Desserts"
       ],
-      "location": "13A Street, New york",
-      "distance": 5000,
+      "location": "XYZ Street, Nam Định, Việt Nam",
+      "distance": 4000,
+      "time": 40,
+      "images": {
+        "logo": "namdinhrestaurantlogo",
+        "poster": "namdinhrestaurantposter1",
+        "cover": "localcuisine1"
+      },
+      "categories": ["Local Specialties", "Seafood", "Desserts", "Banh Mi", "Rice Dishes", "Noodles", "Spring Rolls" ]
+  },
+
+  {
+      "id": "2",
+      "name": "Nhà Hàng Đặc Sản Thái Bình",
+      "type": "Restaurant",
+      "tags": [
+        "Vietnamese",
+        "Seafood",
+        "LocalSpecialties",
+        "RiceDishes",
+        "Noodles",
+        "SpringRolls",
+        "Pho",
+        "GrilledFish",
+        "PomeloSalad",
+        "CrispyPancakes"
+      ],
+      "location": "ABC Street, Thái Bình, Việt Nam",
+      "distance": 3000,
+      "time": 45,
+      "images": {
+        "logo": "thaibinhrestaurantlogo",
+        "poster": "thaibinhrestaurantposter2",
+        "cover": "localcuisine2"
+      },
+      "categories": ["Grilled Fish", "Crispy Pancakes", "Pomelo Salad", "Pho", "Spring Rolls", "Noodles", "Seafood" ]
+  },
+
+  {
+      "id": "3",
+      "name": "Le Bistrot Parisien",
+      "type": "French Cuisine",
+      "tags": [
+        "French",
+        "FineDining",
+        "WineBar",
+        "Cheese",
+        "Escargot",
+        "FoieGras",
+        "Bouillabaisse",
+        "CoqauVin",
+        "Ratatouille",
+        "CrèmeBrûlée",
+        "TarteTatin",
+        "Macarons"
+      ],
+      "location": "XYZ Street, Hà Nội, Việt Nam",
+      "distance": 2000,
+      "time": 60,
+      "images": {
+        "logo": "bistrotlogo",
+        "poster": "bistretposter3",
+        "cover": "frenchcuisine"
+      },
+      "categories": ["Escargot", "Bouillabaisse", "Ratatouille", "Desserts", "Tarte Tatin", "Duck Confit", "Beef Bourguignon", "fromageassorti", "Macarons"]
+  },
+
+  {
+      "id": "4",
+      "name": "Trattoria Bella Italia",
+      "type": "Italian Cuisine",
+      "tags": [
+          "Italian",
+          "Pasta",
+          "Pizza",
+          "Antipasti",
+          "Risotto",
+          "Seafood",
+          "Tiramisu",
+          "Gelato",
+          "Espresso",
+          "Wine"
+      ],
+      "location": "ABC Street, Hà Nội, Việt Nam",
+      "distance": 2500,
+      "time": 50,
+      "images": {
+          "logo": "italialogo",
+          "poster": "italiaposter4",
+          "cover": "italiancuisine"
+      },
+      "categories": ["ravioliconfunghi", "Pizza", "Seafood", "Desserts", "Main Course", "Antipasti", "Pasta"]
+  },
+
+  {
+      "id": "5",
+      "name": "The Luxurious Gastronomy",
+      "type": "Fine Dining",
+      "tags": [
+          "FineDining",
+          "Luxury",
+          "Gourmet",
+          "Exquisite",
+          "Caviar",
+          "Truffle",
+          "FoieGras",
+          "Lobster",
+          "WagyuBeef",
+          "Champagne"
+      ],
+      "location": "Luxury Street, Hà Nội, Việt Nam",
+      "distance": 3000,
+      "time": 90,
+      "images": {
+          "logo": "luxuriouslogo",
+          "poster": "luxuriousposter5",
+          "cover": "finedining"
+      },
+      "categories": ["Appetizer", "Seafood", "Main Course", "Pasta", "Side Dish", "Desserts"]
+  },
+
+  {
+      "id": "6",
+      "name": "Nhà Hàng Sương Mai",
+      "type": "Nhà Hàng Buffet",
+      "tags": [
+        "sushi",
+        "sashimi",
+        "hải sản",
+        "lẩu",
+        "tráng miệng"
+      ],
+      "location": "33 Hoàng Cầu, Nam Định",
+      "distance": 2500,
+      "time": 40,
+      "images": {
+        "logo": "suong_mai_logo",
+        "poster": "suong_mai_poster",
+        "cover": "suong_mai_cover"
+      },
+      "categories": ["Sushi & Sashimi", "Hải Sản Tươi Sống", "Lẩu Hấp Dẫn", "Tráng Miệng Đặc Sắc"]
+    },
+    {
+      "id": "7",
+      "name": "Quán Xôi Gia Đình",
+      "type": "Ăn Vặt",
+      "tags": [
+        "xôi",
+        "bánh mì chảo",
+        "kem xôi",
+        "nước mía"
+      ],
+      "location": "45 Đặng Tiến Đông, Nam Định",
+      "distance": 1800,
       "time": 30,
       "images": {
-        "logo": "mcdonalds",
-        "poster": "mcdonalds",
-        "cover": "burgers"
+        "logo": "xoi_gia_dinh_logo",
+        "poster": "xoi_gia_dinh_poster",
+        "cover": "xoi_gia_dinh_cover"
       },
-      "categories": ["Burgers & Wraps", "Snacks & sides", "Desserts", "Beverages"]
+      "categories": ["Xôi Ngon", "Bánh Mì Chảo", "Kem Xôi Hấp Dẫn", "Đồ Uống Mát Lạnh"]
     },
     {
-      "id": "101",
-      "name": "Burger King",
-      "type": "Dine-In",
-      "tags": ["burgers", "chicken", "veg", "grilled", "fries"],
-      "location": "15th Avenue, New york",
-      "distance": 3900,
+      "id": "8",
+      "name": "Nhà Hàng Phố Xưa",
+      "type": "Nhà Hàng Địa Phương",
+      "tags": [
+        "bún chả",
+        "nem rán",
+        "phở bò",
+        "trà đá"
+      ],
+      "location": "78 Nguyễn Trãi, Nam Định",
+      "distance": 1500,
       "time": 25,
       "images": {
-        "logo": "burgerking",
-        "poster": "burgerking",
-        "cover": "burgerking"
+        "logo": "pho_xua_logo",
+        "poster": "pho_xua_poster",
+        "cover": "pho_xua_cover"
       },
-      "categories": ["Burgers", "Whopper", "Chicken Wings", "Sides"]
+      "categories": ["Đặc Sản Bắc Bộ", "Món Ăn Ngon Miệng", "Hương Vị Truyền Thống", "Đồ Uống Dân Dụ"]
     },
     {
-      "id": "102",
-      "name": "Dominos Pizza",
-      "type": "Dine-In",
+      "id": "9",
+      "name": "Quán Lẩu Cá Hồng",
+      "type": "Nhà Hàng Hải Sản",
       "tags": [
-        "pizza",
-        "chicken",
-        "barbeque",
-        "sausage",
-        "indian",
-        "veg",
-        "mexican",
-        "paneer",
-        "bread"
+        "lẩu cá hồng",
+        "cua biển",
+        "sò điệp",
+        "sinh tố trái cây"
       ],
-      "location": "15th Avenue, New york",
-      "distance": 6300,
+      "location": "101 Trần Hưng Đạo, Nam Định",
+      "distance": 3000,
       "time": 35,
       "images": {
-        "logo": "dominos",
-        "poster": "dominos",
-        "cover": "dominospizza"
+        "logo": "lau_ca_hong_logo",
+        "poster": "lau_ca_hong_poster",
+        "cover": "lau_ca_hong_cover"
       },
-      "categories": [
-        "Non-Veg Pizza",
-        "Veg Pizza",
-        "Pizza Mania",
-        "Sides and Beverages"
-      ]
+      "categories": ["Lẩu Hải Sản", "Hải Sản Tươi Ngon", "Đặc Sản Biển", "Đồ Uống Tươi Mát"]
     },
     {
-      "id": "103",
-      "name": "Pizza Hut",
-      "type": "Dine-In",
-      "tags": ["Pizza", "American Foods", "Chicken", "Meat"],
-      "location": "15th Avenue, New york",
-      "distance": 5560,
-      "time": 31,
+      "id": "10",
+      "name": "Nhà Hàng Ngon Ngon",
+      "type": "Nhà Hàng Gia Đình",
+      "tags": [
+        "cơm gia đình",
+        "món chiên",
+        "chè trôi nước",
+        "nước ngọt"
+      ],
+      "location": "56 Lê Lợi, Nam Định",
+      "distance": 2000,
+      "time": 30,
       "images": {
-        "logo": "pizzahut",
-        "poster": "pizzahut",
-        "cover": "pizzahut"
+        "logo": "ngon_ngon_logo",
+        "poster": "ngon_ngon_poster",
+        "cover": "ngon_ngon_cover"
       },
-      "categories": ["Pizzas", "Sides", "Desserts", "Drinks"]
-    },
-    {
-      "id": "104",
-      "name": "Baskin Robins",
-      "type": "Take-Away",
-      "tags": ["Icecream", "American Foods", "Desserts"],
-      "location": "15th Avenue, New york",
-      "distance": 3400,
-      "time": 21,
-      "images": {
-        "logo": "baskinrobbins",
-        "poster": "baskinrobbins",
-        "cover": "baskinrobbins"
-      },
-      "categories": [
-        "Twin Combo Packs",
-        "Scoops",
-        "Icecream Cakes",
-        "Sundaes",
-        "Icecream Sandwich",
-        "Super-Duper Thick Shakes"
-      ]
-    },
-    {
-      "id": "105",
-      "name": "Starbucks",
-      "type": "Cafe",
-      "tags": ["Coffee", "American Foods", "Tea"],
-      "location": "15th Avenue, New york",
-      "distance": 6600,
-      "time": 36,
-      "images": {
-        "logo": "starbucks",
-        "poster": "starbucks",
-        "cover": "starbucks"
-      },
-      "categories": [
-        "Featured Drinks",
-        "Freshly Brewed Coffee",
-        "Crème Frappuccino®",
-        "Cold Brew",
-        "Espresso",
-        "Coffee Frappuccino®",
-        "Teavana® Tea"
-      ]
-    },
-    {
-      "id": "106",
-      "name": "Subway",
-      "type": "Take-Away",
-      "tags": ["American Foods", "Burger", "Sandwitch"],
-      "location": "15th Avenue, New york",
-      "distance": 4800,
-      "time": 26,
-      "images": {
-        "logo": "subway",
-        "poster": "subway",
-        "cover": "subway"
-      },
-      "categories": [
-        "Signature Wraps",
-        "All Sandwiches",
-        "Breakfast",
-        "Salads",
-        "Snacks",
-        "Sides & Drinks"
-      ]
-    },
-    {
-      "id": "107",
-      "name": "KFC",
-      "type": "Dine-In",
-      "tags": ["American Foods", "Chicken"],
-      "location": "15th Avenue, New york",
-      "distance": 2600,
-      "time": 16,
-      "images": {
-        "logo": "kfc",
-        "poster": "kfc",
-        "cover": "kfc"
-      },
-      "categories": ["Chicken", "Burgers", "Rice Bowls", "Snacks", "Beverages"]
-    }
-  ]
-  
+      "categories": ["Bữa Cơm Gia Đình", "Món Chiên Hấp Dẫn", "Tráng Miệng Ngọt Ngào", "Đồ Uống Hấp Dẫn"]
+    }  
+]

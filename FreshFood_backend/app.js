@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static("static"));
 
-app.use("*", require('./services/authentication.service').tokenVerification);
+
 
 app.use('/', indexRouter);
 app.use('/api', authenticationRouter);
@@ -36,7 +36,9 @@ app.use("/api/restaurant", restaurantRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/food", foodRouter);
 app.use("/api/bookmark", bookmarkRouter);
-//pp.use("/refresh-token", require('./services/authentication.service').tokenRefresh);
+
+app.use("*", require('./services/authentication.service').tokenVerification);
+app.use("/refresh-token", require('./services/authentication.service').tokenRefresh);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

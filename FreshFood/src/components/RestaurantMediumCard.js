@@ -40,7 +40,7 @@ const RestaurantMediumCard = ({name, images: {logo}, time, distance, tags}) => {
             <Text style={styles.deliveryDetailsText}>{time} min</Text>
           </View>
           <View style={styles.rowAndCenter}>
-            <Image style={styles.deliveryDetailsIcon} />
+            {/* <Image style={styles.deliveryDetailsIcon} /> */}
             <Text style={styles.deliveryDetailsText}>{distance}</Text>
           </View>
         </View>

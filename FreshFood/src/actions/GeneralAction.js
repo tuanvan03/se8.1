@@ -1,6 +1,7 @@
 import { StorageService } from "../services";
 import UserService from '../services/UserService';
 import CartAction from "./CartAction";
+import BookmarkAction from './BookmarkAction';
 
 const types = {
     SET_IS_APP_LOADING: 'SET_IS_APP_LOADING',
@@ -47,24 +48,22 @@ const types = {
       });
       StorageService.getToken().then(token => {
         if (token) {
-          console.log(token);
           dispatch({
             type: types.SET_TOKEN,
             payload: token,
           });
           UserService.getUserData().then(userResponse => {
-            console.log(userResponse);
             if (userResponse?.status) {
               dispatch({
                 type: types.SET_USER_DATA,
                 payload: userResponse?.data,
               });
               dispatch(CartAction.getCartItems());
+              dispatch(BookmarkAction.getBookmarks());
               dispatch({
                 type: types.SET_IS_APP_LOADING,
                 payload: false,
               });
-              console.log(userResponse?.data);
             } else if (userResponse?.message === 'TokenExpiredError') {
               AuthenicationService.refreshToken().then(tokenResponse => {
                 if (tokenResponse?.status) {

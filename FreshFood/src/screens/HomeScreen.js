@@ -35,7 +35,6 @@ const HomeScreen = ({navigation}) => {
     const unsubscribe = navigation.addListener('focus', () => {
       RestaurantService.getRestaurants().then(response => {
         if (response?.status) {
-          console.log(response?.data);
           setRestaurants(response?.data);
         }
       });

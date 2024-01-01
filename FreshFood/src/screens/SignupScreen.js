@@ -119,7 +119,7 @@ const SignupScreen = ({navigation}) => {
           <View style={styles.headerContainer}>
             <Ionicons
               name="chevron-back-outline"
-              size={30}
+              size={40}
               onPress={() => navigation.goBack()}
             />
             <Text style={styles.headerTitle}>Sign Up</Text>
@@ -235,26 +235,29 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 10,
       },
       headerTitle: {
-        fontSize: 20,
-        fontFamily: Fonts.POPPINS_MEDIUM,
-        lineHeight: 20 * 1.4,
+        fontSize: 29,
+        color: Colors.DEFAULT_BLACK,
+        fontFamily: Fonts.POPPINS_BLACK,
+        lineHeight: 20 * 4,
         width: Display.setWidth(80),
         textAlign: 'center',
       },
       title: {
-        fontSize: 20,
+        fontSize: 24,
         fontFamily: Fonts.POPPINS_MEDIUM,
+        color: Colors.DEFAULT_BLACK,
         lineHeight: 20 * 1.4,
-        marginTop: 50,
+        marginTop: 10,
         marginBottom: 10,
         marginHorizontal: 20,
       },
       content: {
         fontSize: 20,
         fontFamily: Fonts.POPPINS_MEDIUM,
+        color: Colors.DEFAULT_BLACK,
         marginTop: 10,
         marginBottom: 20,
         marginHorizontal: 20,
@@ -263,9 +266,9 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.LIGHT_GREY,
         paddingHorizontal: 20,
         marginHorizontal: 20,
-        marginVertical: 5,
+        //marginVertical: 5,
         borderRadius: 8,
-        borderWidth: 2,
+        borderWidth: 0.5,
         borderColor: Colors.LIGHT_GREY2,
         justifyContent: 'center',
       },
@@ -288,7 +291,7 @@ const styles = StyleSheet.create({
         height: Display.setHeight(6),
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 10,
       },
       signinButtonText: {
         fontSize: 18,

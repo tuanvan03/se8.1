@@ -26,11 +26,11 @@ const Navigators = () => {
     state => state?.generalState,
   );
   const dispatch = useDispatch();
-  console.log('token: ', token);
+
   useEffect(() => {
     dispatch(GeneralAction.appStart())
   }, []);
-  console.log('isAppp: ', isAppLoading);
+
   
   return (
     <NavigationContainer>

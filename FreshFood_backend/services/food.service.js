@@ -1,7 +1,7 @@
 const { mongoConfig } = require("../config");
 const MongoDB = require("./mongodb.service");
 
-const getOneFoodById = async ({foodId}) => {
+const getOneFoodById = async (foodId) => {
   try {
     let food = await MongoDB.db
       .collection(mongoConfig.collections.FOODS)

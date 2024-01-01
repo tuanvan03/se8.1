@@ -43,7 +43,7 @@ const RestaurantCard = ({
         style={styles.posterStyle}
       />
       <Text style={styles.titleText}>{name}</Text>
-      <Text style={styles.tagText}>{tags?.join('•')}</Text>
+      {/* <Text style={styles.tagText}>{tags?.join('•')}</Text> */}
       <View style={styles.footerContainer}>
         <View style={styles.rowAndCenter}>
           <FontAwesome name="star" size={14} color={Colors.DEFAULT_YELLOW} />
@@ -61,7 +61,7 @@ const RestaurantCard = ({
           </View>
           <View style={styles.timeAndDistanceContainer}>
             <Ionicons
-              name="ios-time-outline"
+              name="time-outline"
               color={Colors.DEFAULT_YELLOW}
               size={15}
             />

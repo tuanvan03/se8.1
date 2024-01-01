@@ -111,7 +111,7 @@ const RestaurantScreen = ({
                 }
               />
             </View>
-            <Text style={styles.tagText}>{restaurant?.tags?.join(' • ')}</Text>
+            <Text style={styles.tagText}>{restaurant?.tags?.join('•')}</Text>
             <View style={styles.ratingReviewsContainer}>
               <FontAwesome
                 name="star"

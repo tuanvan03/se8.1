@@ -42,7 +42,7 @@ const BookmarkCard = ({id, name, images, location, tags, navigate}) => {
           </View>
           <View style={styles.rowAndCenter}>
             <Ionicons
-              name="ios-time-outline"
+              name="time-outline"
               color={Colors.GOOGLE_BLUE}
               size={15}
             />

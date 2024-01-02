@@ -1,13 +1,16 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image,TouchableOpacity} from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {Colors, Fonts, Images} from '../contants';
 import {StaticImageService} from '../services';
 import {Display} from '../utils';
 
-const RestaurantMediumCard = ({name, images: {logo}, time, distance, tags}) => {
+const RestaurantMediumCard = ({id, name, images: {logo}, time, distance, tags, navigate}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity 
+      style={styles.container}
+      activeOpacity={0.8}
+      onPress={() => navigate(id)}>
       <View>
         <Image
           source={{uri: StaticImageService.getLogo(logo)}}
@@ -45,7 +48,7 @@ const RestaurantMediumCard = ({name, images: {logo}, time, distance, tags}) => {
           </View>
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

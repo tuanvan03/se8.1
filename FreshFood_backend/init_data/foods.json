@@ -600,16 +600,6 @@
     "ingredients": "Bánh tráng, Cá hồng, Tôm, Sò điệp, Rau sống"
   },
   {
-    "id": "60",
-    "restaurantId": "6",
-    "name": "Lẩu Riêu Cua",
-    "price": 180.0,
-    "image": "laurieucua",
-    "category": "Lẩu Hấp Dẫn",
-    "description": "Lẩu riêu cua truyền thống với cua sống và nước dùng đậm đà.",
-    "ingredients": "Cua sống, Bún, Rau sống, Nước dùng riêu"
-  },
-  {
       "id": "70",
       "restaurantId": "7",
       "name": "Xôi Gia Đình Trứ Danh",

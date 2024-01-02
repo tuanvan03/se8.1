@@ -5,7 +5,9 @@ import {Colors, Fonts, Images} from '../contants';
 import {StaticImageService} from '../services';
 import {Display} from '../utils';
 
+
 const RestaurantMediumCard = ({id, name, images: {logo}, time, distance, tags, navigate}) => {
+
   return (
     <TouchableOpacity 
       style={styles.container}

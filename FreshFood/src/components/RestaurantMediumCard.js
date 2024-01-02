@@ -5,7 +5,7 @@ import {Colors, Fonts, Images} from '../contants';
 import {StaticImageService} from '../services';
 import {Display} from '../utils';
 
-const RestaurantMediumCard = ({name, images: {logo}, time, distance, tags}) => {
+const RestaurantMediumCard = ({id, name, images: {logo}, time, distance, tags}) => {
   return (
     <View style={styles.container}>
       <View>

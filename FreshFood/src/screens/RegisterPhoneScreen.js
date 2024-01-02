@@ -54,6 +54,7 @@ const RegisterPhoneScreen = ({navigation}) => {
       <View style={styles.headerContainer}>
         <Ionicons
           name="chevron-back-outline"
+          color={Colors.DEFAULT_BLACK}
           size={40}
           onPress={() => navigation.goBack()}
         />

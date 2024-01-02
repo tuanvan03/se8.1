@@ -29,6 +29,7 @@ const CartScreen = ({navigation}) => {
       <View style={styles.headerContainer}>
         <Ionicons
           name="chevron-back-outline"
+          color={Colors.DEFAULT_BLACK}
           size={30}
           onPress={() => navigation.goBack()}
         />
@@ -136,9 +137,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   headerTitle: {
-    fontSize: 20,
-    fontFamily: Fonts.POPPINS_MEDIUM,
+    fontSize: 24,
+    fontFamily: Fonts.POPPINS_BLACK,
     lineHeight: 20 * 1.4,
+    color: Colors.DEFAULT_BLACK,
     width: Display.setWidth(80),
     textAlign: 'center',
   },

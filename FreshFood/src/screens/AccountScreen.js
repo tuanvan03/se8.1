@@ -195,8 +195,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   headerText: {
-    fontSize: 20,
-    fontFamily: Fonts.POPPINS_MEDIUM,
+    fontSize: 24,
+    fontFamily: Fonts.POPPINS_BLACK,
     lineHeight: 20 * 1.4,
     color: Colors.DEFAULT_WHITE,
   },
@@ -309,9 +309,9 @@ const styles = StyleSheet.create({
   },
   sectionText: {
     fontSize: 13,
-    fontFamily: Fonts.POPPINS_REGULAR,
+    fontFamily: Fonts.POPPINS_BOLD,
     lineHeight: 13 * 1.4,
-    color: Colors.INACTIVE_GREY,
+    color: Colors.DEFAULT_BLACK,
     marginLeft: 10,
   },
 });

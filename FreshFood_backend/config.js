@@ -13,7 +13,11 @@ module.exports = {
         // Collections within the database
         collections: {
             // Collection for user data
-            USERS: "users"
+            USERS: "users",
+            RESTAURANTS: "restaurants",
+            CARTS: "carts",
+            FOODS: "foods",
+            BOOKMARKS: "bookmarks",
         }
     },
     serverConfig: {

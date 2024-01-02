@@ -1,0 +1,1002 @@
+[
+  {
+      "id": "21",
+      "restaurantId": "2",
+      "name": "Cá Nước Ngọt Nước Đỏ Nước Lợ",
+      "price": 250000.0,
+      "image": "canuocngot",
+      "category": "Grilled Fish",
+      "description": "Cá nước ngọt nước đỏ nước lợ được chế biến tinh tế, nướng chín đều, ăn kèm với các loại rau sống và nước mắm Phan Thiết truyền thống.",
+      "ingredients": "Cá nước ngọt, Rau sống, Nước mắm Phan Thiết"
+  },
+  {
+      "id": "22",
+      "restaurantId": "2",
+      "name": "Bánh Đậu Xanh Thái Bình",
+      "price": 30000.0,
+      "image": "banhdauxanh",
+      "category": "Crispy Pancakes",
+      "description": "Bánh đậu xanh Thái Bình là món ăn truyền thống, vị thơm của bánh kết hợp với nhân đậu xanh ngon mắt.",
+      "ingredients": "Bột gạo, Đậu xanh, Dầu ăn, Nước mắm"
+  },
+  {
+      "id": "23",
+      "restaurantId": "2",
+      "name": "Gỏi Bưởi Tôm Thái Bình",
+      "price": 120000.0,
+      "image": "goibuoi",
+      "category": "Pomelo Salad",
+      "description": "Gỏi bưởi tôm Thái Bình là sự kết hợp hài hòa giữa vị chua ngọt của bưởi và vị ngon của tôm biển tươi ngon.",
+      "ingredients": "Bưởi, Tôm, Rau sống, Đậu phộng, Mắm nêm"
+  },
+  {
+      "id": "24",
+      "restaurantId": "2",
+      "name": "Phở Bò Đặc Biệt",
+      "price": 70000.0,
+      "image": "phobo",
+      "category": "Pho",
+      "description": "Phở bò đặc biệt với nước dùng ngon, bò mềm, ăn kèm với rau sống và gia vị truyền thống.",
+      "ingredients": "Bò, Bún, Rau sống, Gia vị phở"
+  },
+  {
+      "id": "25",
+      "restaurantId": "2",
+      "name": "Cuộn Gỏi Cuốn Tôm Thịt",
+      "price": 50000.0,
+      "image": "cuongoicuon",
+      "category": "Spring Rolls",
+      "description": "Cuộn gỏi cuốn tôm thịt với nhân tôm thịt tươi ngon, cuốn bên ngoài là lá bánh tráng mỏng giòn.",
+      "ingredients": "Tôm, Thịt, Bánh tráng, Rau sống, Bún"
+  },
+  {
+      "id": "26",
+      "restaurantId": "2",
+      "name": "Bún Riêu Cua Thái Bình",
+      "price": 80000.0,
+      "image": "bunrieu",
+      "category": "Noodles",
+      "description": "Bún riêu cua Thái Bình có nước dùng thơm ngon, cua tươi ngon và ăn kèm với rau sống.",
+      "ingredients": "Bún, Cua, Rau sống, Mắm tôm"
+  },
+  {
+      "id": "27",
+      "restaurantId": "2",
+      "name": "Bánh Xèo Gạo Lứt",
+      "price": 45000.0,
+      "image": "banhxeo",
+      "category": "Crispy Pancakes",
+      "description": "Bánh xèo gạo lứt có vị giòn ngon, nhân bánh chứa đựng rất nhiều thịt và rau sống.",
+      "ingredients": "Bột gạo lứt, Thịt heo, Tôm, Rau sống, Nước mắm"
+  },
+  {
+      "id": "28",
+      "restaurantId": "2",
+      "name": "Lẩu Cá Linh Nước Lợ",
+      "price": 180000.0,
+      "image": "lauca",
+      "category": "Seafood",
+      "description": "Lẩu cá linh nước lợ với nước dùng ngon và đậm đà, ăn kèm với nhiều loại cá và rau sống.",
+      "ingredients": "Cá linh, Rau sống, Nước dùng, Gia vị"
+  },
+  {
+      "id": "29",
+      "restaurantId": "2",
+      "name": "Bánh Chưng Nếp Cẩm",
+      "price": 55000.0,
+      "image": "banhchung",
+      "category": "Local Specialties",
+      "description": "Bánh chưng nếp cẩm là món ăn truyền thống vào dịp Tết, có lớp nếp cẩm màu sắc đẹp mắt.",
+      "ingredients": "Nếp, Nhân đậu xanh, Lá chuối"
+  },
+  {
+      "id": "20",
+      "restaurantId": "2",
+      "name": "Bún Chả Cá Hồi",
+      "price": 120000.0,
+      "image": "bunchaca",
+      "category": "Seafood",
+      "description": "Bún chả cá hồi là sự kết hợp tinh tế giữa bún và cá hồi hảo hạng, ăn kèm với nước mắm Phú Quốc.",
+      "ingredients": "Bún, Cá hồi, Rau sống, Nước mắm Phú Quốc"
+  },
+  {
+      "id": "11",
+      "restaurantId": "1",
+      "name": "Bánh Gai",
+      "price": 25000.0,
+      "image": "banhgai",
+      "category": "Local Specialties",
+      "description": "Bánh gai là một loại bánh tráng màu đen, được làm từ lá gai tự nhiên, thường ăn kèm với đậu xanh và mè.",
+      "ingredients": "Lá gai, Bột nếp, Đậu xanh, Mè"
+  },
+  {
+      "id": "12",
+      "restaurantId": "1",
+      "name": "Bún Cá Đuối",
+      "price": 80000.0,
+      "image": "buncaduoi",
+      "category": "Seafood",
+      "description": "Bún cá đuối có nước dùng ngon và đậm đà, ăn kèm với cá đuối tươi ngon và rau sống.",
+      "ingredients": "Bún, Cá đuối, Rau sống, Gia vị"
+  },
+  {
+      "id": "13",
+      "restaurantId": "1",
+      "name": "Bánh Tráng Cuộn Nước Dừa",
+      "price": 35000.0,
+      "image": "banhtrangcuon",
+      "category": "Desserts",
+      "description": "Bánh tráng cuộn nước dừa với lớp bánh tráng mỏng, nhân dừa thơm ngon và nước cốt dừa tươi ngon.",
+      "ingredients": "Bánh tráng, Dừa, Nước cốt dừa"
+  },
+  {
+      "id": "14",
+      "restaurantId": "1",
+      "name": "Bún Sứa",
+      "price": 75000.0,
+      "image": "bunsua",
+      "category": "Seafood",
+      "description": "Bún sứa với sứa tươi ngon, nước dùng thơm ngon và ăn kèm với rau sống.",
+      "ingredients": "Bún, Sứa, Rau sống, Gia vị"
+  },
+  {
+      "id": "15",
+      "restaurantId": "1",
+      "name": "Bánh Mì Chảo Nước Dừa",
+      "price": 45000.0,
+      "image": "banhmichao",
+      "category": "Banh Mi",
+      "description": "Bánh mì chảo nước dừa với lớp vỏ giòn và nhân béo ngọt từ nước dừa.",
+      "ingredients": "Bánh mì, Nước dừa, Bơ, Thịt nguội"
+  },
+  {
+      "id": "16",
+      "restaurantId": "1",
+      "name": "Cơm Niêu Cá Lóc",
+      "price": 90000.0,
+      "image": "comnieu",
+      "category": "Rice Dishes",
+      "description": "Cơm niêu cá lóc với cơm giòn và cá lóc nước lợ, ăn kèm với nước mắm Phan Thiết.",
+      "ingredients": "Cơm, Cá lóc, Nước mắm Phan Thiết, Gia vị"
+  },
+  {
+      "id": "17",
+      "restaurantId": "1",
+      "name": "Bánh Gối Hải Phòng",
+      "price": 40000.0,
+      "image": "banhgoinuocmam",
+      "category": "Local Specialties",
+      "description": "Bánh gối Hải Phòng với vỏ giòn và nhân ngon, ăn kèm với nước mắm Hải Phòng.",
+      "ingredients": "Bột gạo, Thịt lợn, Nấm, Nước mắm Hải Phòng"
+  },
+  {
+      "id": "18",
+      "restaurantId": "1",
+      "name": "Bánh Canh Cua Nam Định",
+      "price": 85000.0,
+      "image": "banhcanhcua",
+      "category": "Noodles",
+      "description": "Bánh canh cua Nam Định có nước dùng ngon và ăn kèm với cua tươi ngon và rau sống.",
+      "ingredients": "Bánh canh, Cua, Rau sống, Gia vị"
+  },
+  {
+      "id": "19",
+      "restaurantId": "1",
+      "name": "Gỏi Cuốn Tôm Thịt",
+      "price": 50000.0,
+      "image": "goicuontomthit",
+      "category": "Spring Rolls",
+      "description": "Gỏi cuốn tôm thịt với nhân tôm thịt tươi ngon, cuốn bên ngoài là lá bánh tráng mỏng giòn.",
+      "ingredients": "Tôm, Thịt, Bánh tráng, Rau sống, Bún"
+  },
+  {
+      "id": "10",
+      "restaurantId": "1",
+      "name": "Bánh Đậu Xanh Nước Cốt Dừa",
+      "price": 38000.0,
+      "image": "banhdauxanh3",
+      "category": "Desserts",
+      "description": "Bánh đậu xanh nước cốt dừa là món tráng miệng phổ biến, ngon mắt và thơm ngon.",
+      "ingredients": "Bột gạo, Đậu xanh, Nước cốt dừa"
+  },
+  {
+      "id": "31",
+      "restaurantId": "3",
+      "name": "Escargot à l'Ail et au Persil",
+      "price": 120000.0,
+      "image": "escargot",
+      "category": "Escargot",
+      "description": "Escargot cuộn với tỏi và hành mỡ thơm ngon, ăn kèm với bánh mì nướng giòn.",
+      "ingredients": "Escargot, Tỏi, Hành mỡ, Bánh mì"
+  },
+  {
+      "id": "32",
+      "restaurantId": "3",
+      "name": "Bouillabaisse Marseillaise",
+      "price": 180000.0,
+      "image": "bouillabaisse",
+      "category": "Bouillabaisse",
+      "description": "Bouillabaisse Marseillaise là một loại súp hải sản truyền thống của Pháp, ngon mắt và thơm ngon.",
+      "ingredients": "Cá hồi, Cua, Tôm, Nước dùng, Rau sống"
+  },
+  {
+      "id": "33",
+      "restaurantId": "3",
+      "name": "Coq au Vin",
+      "price": 160000.0,
+      "image": "coqauvin",
+      "category": "Coq au Vin",
+      "description": "Coq au Vin là món ăn truyền thống của Pháp với thịt gà nấu chín trong nước sốt rượu vang đỏ.",
+      "ingredients": "Gà, Rượu vang đỏ, Nấm, Rau sống"
+  },
+  {
+      "id": "34",
+      "restaurantId": "3",
+      "name": "Ratatouille",
+      "price": 120000.0,
+      "image": "ratatouille",
+      "category": "Ratatouille",
+      "description": "Ratatouille là một món rau sống ngon mắt và thơm ngon, chứa đựng nhiều loại rau tươi.",
+      "ingredients": "Cà chua, Bí ngô, Cà tím, Hành tây, Ớt chuông"
+  },
+  {
+      "id": "35",
+      "restaurantId": "3",
+      "name": "Crème Brûlée",
+      "price": 75000.0,
+      "image": "cremebrulee",
+      "category": "Desserts",
+      "description": "Crème Brûlée là một món tráng miệng phổ biến với lớp đường caramel giòn ở trên.",
+      "ingredients": "Sữa tươi, Đường, Trứng, Đường caramen"
+  },
+  {
+      "id": "36",
+      "restaurantId": "3",
+      "name": "Tarte Tatin",
+      "price": 90000.0,
+      "image": "tartetatin",
+      "category": "Tarte Tatin",
+      "description": "Tarte Tatin với lớp vỏ bánh giòn và nhân táo ngọt mềm, thường ăn kèm với kem vani.",
+      "ingredients": "Bột, Táo, Đường, Bơ"
+  },
+  {
+      "id": "37",
+      "restaurantId": "3",
+      "name": "Canard Confit",
+      "price": 190000.0,
+      "image": "canardconfit",
+      "category": "Duck Confit",
+      "description": "Canard Confit là món thịt vịt được ủ muối và nấu chín trong dầu, thường ăn kèm với khoai tây.",
+      "ingredients": "Thịt vịt, Muối, Dầu ăn, Khoai tây"
+  },
+  {
+      "id": "38",
+      "restaurantId": "3",
+      "name": "Bœuf Bourguignon",
+      "price": 170000.0,
+      "image": "boeufbourguignon",
+      "category": "Beef Bourguignon",
+      "description": "Bœuf Bourguignon là món thịt bò nấu chín trong rượu vang đỏ và nước sốt thơm ngon.",
+      "ingredients": "Thịt bò, Rượu vang đỏ, Nấm, Cà chua"
+  },
+  {
+      "id": "39",
+      "restaurantId": "3",
+      "name": "Fromage Assorti",
+      "price": 130000.0,
+      "image": "fromageassorti",
+      "category": "Cheese",
+      "description": "Fromage Assorti là một dàn hải sản phong phú với nhiều loại phô mai Pháp khác nhau.",
+      "ingredients": "Phô mai Camembert, Phô mai Brie, Phô mai Roquefort, Bánh mì"
+  },
+  {
+      "id": "30",
+      "restaurantId": "3",
+      "name": "Macarons",
+      "price": 50000.0,
+      "image": "macarons",
+      "category": "Macarons",
+      "description": "Macarons là một loại bánh ngọt trứng được làm từ bột hạt hạch, thường có nhân kem giữa.",
+      "ingredients": "Bột hạt hạch, Đường, Trứng, Nhân kem"
+  },
+  {
+      "id": "40",
+      "restaurantId": "4",
+      "name": "Ravioli con Funghi",
+      "price": 110000.0,
+      "image": "ravioliconfunghi",
+      "category": "Pasta",
+      "description": "Ravioli con Funghi với nhân nấm và sốt kem bơ thơm ngon.",
+      "ingredients": "Ravioli, Nấm, Sốt kem bơ, Parmesan"
+  },
+  {
+      "id": "41",
+      "restaurantId": "4",
+      "name": "Quattro Formaggi Pizza",
+      "price": 140000.0,
+      "image": "quattroformaggipizza",
+      "category": "Pizza",
+      "description": "Quattro Formaggi Pizza với bốn loại phô mai: Gorgonzola, Mozzarella, Parmesan, và Fontina.",
+      "ingredients": "Bột pizza, Gorgonzola, Mozzarella, Parmesan, Fontina"
+  },
+  {
+      "id": "42",
+      "restaurantId": "4",
+      "name": "Linguine ai Frutti di Mare",
+      "price": 160000.0,
+      "image": "linguineaifruttidimare",
+      "category": "Seafood",
+      "description": "Linguine ai Frutti di Mare với hải sản tươi ngon như tôm, sò điệp và mực.",
+      "ingredients": "Linguine, Tôm, Sò điệp, Mực, Sốt cà chua"
+  },
+  {
+      "id": "43",
+      "restaurantId": "4",
+      "name": "Tiramisu",
+      "price": 85000.0,
+      "image": "tiramisu",
+      "category": "Desserts",
+      "description": "Tiramisu là một món tráng miệng Ý với lớp kem tươi và cà phê.",
+      "ingredients": "Bánh ladyfinger, Cà phê, Kem tươi, Cacao"
+  },
+  {
+      "id": "44",
+      "restaurantId": "4",
+      "name": "Ossobuco alla Milanese",
+      "price": 190000.0,
+      "image": "ossobuco",
+      "category": "Main Course",
+      "description": "Ossobuco alla Milanese với thịt bò hầm chín và sốt thơm ngon.",
+      "ingredients": "Thịt bò, Hành tây, Cà chua, Gia vị"
+  },
+  {
+      "id": "45",
+      "restaurantId": "4",
+      "name": "Caprese Salad",
+      "price": 75000.0,
+      "image": "capresesalad",
+      "category": "Antipasti",
+      "description": "Caprese Salad với cà chua, phô mai Mozzarella và lá basil tươi ngon.",
+      "ingredients": "Cà chua, Mozzarella, Basil, Dầu ôliu"
+  },
+  {
+      "id": "46",
+      "restaurantId": "4",
+      "name": "Gnocchi alla Sorrentina",
+      "price": 120000.0,
+      "image": "gnocchisorrentina",
+      "category": "Pasta",
+      "description": "Gnocchi alla Sorrentina với sốt cà chua và phô mai Mozzarella.",
+      "ingredients": "Gnocchi, Sốt cà chua, Mozzarella, Basil"
+  },
+  {
+      "id": "47",
+      "restaurantId": "4",
+      "name": "Panna Cotta",
+      "price": 80000.0,
+      "image": "pannacotta",
+      "category": "Desserts",
+      "description": "Panna Cotta với lớp kem sữa ngọt và nước dứa ngon mắt.",
+      "ingredients": "Kem sữa, Nước dứa, Đường, Gelatin"
+  },
+  {
+      "id": "48",
+      "restaurantId": "4",
+      "name": "Fettuccine Alfredo",
+      "price": 130000.0,
+      "image": "fettuccinealfredo",
+      "category": "Pasta",
+      "description": "Fettuccine Alfredo với sốt bơ và phô mai Parmesan.",
+      "ingredients": "Fettuccine, Bơ, Parmesan"
+  },
+  {
+      "id": "49",
+      "restaurantId": "4",
+      "name": "Calamari Fritti",
+      "price": 110000.0,
+      "image": "calamarifritti",
+      "category": "Antipasti",
+      "description": "Calamari Fritti với mực tươi chiên giòn, ăn kèm với sốt marinara.",
+      "ingredients": "Mực, Bột chiên, Sốt marinara"
+  },
+  {
+      "id": "50",
+      "restaurantId": "5",
+      "name": "Foie Gras au Torchon",
+      "price": 2200000.0,
+      "image": "foiegras",
+      "category": "Appetizer",
+      "description": "Foie Gras au Torchon là một món khai vị sang trọng với gan ngỗng được ủ và nấu chín.",
+      "ingredients": "Gan ngỗng, Muối, Tiêu, Brioche"
+  },
+  {
+      "id": "51",
+      "restaurantId": "5",
+      "name": "Lobster Thermidor",
+      "price": 2800000.0,
+      "image": "lobsterthermidor",
+      "category": "Seafood",
+      "description": "Lobster Thermidor với sốt kem phô mai và các gia vị tinh tế, ăn kèm với rau xanh tươi.",
+      "ingredients": "Tôm hùm, Sốt kem phô mai, Nước sốt cay, Rau sống"
+  },
+  {
+      "id": "52",
+      "restaurantId": "5",
+      "name": "Wagyu Beef Tenderloin",
+      "price": 3500000.0,
+      "image": "wagyutenderloin",
+      "category": "Main Course",
+      "description": "Wagyu Beef Tenderloin với thịt bò Wagyu chất lượng cao, ăn kèm với sốt đặc biệt.",
+      "ingredients": "Thịt bò Wagyu, Sốt tiêu đen, Bơ, Rau sống"
+  },
+  {
+      "id": "53",
+      "restaurantId": "5",
+      "name": "Duck Confit with Raspberry Sauce",
+      "price": 2400000.0,
+      "image": "duckconfit",
+      "category": "Main Course",
+      "description": "Duck Confit với sốt dâu thơm ngon, ăn kèm với khoai tây nghiền.",
+      "ingredients": "Chân vịt confit, Sốt dâu, Khoai tây nghiền, Rau sống"
+  },
+  {
+      "id": "54",
+      "restaurantId": "5",
+      "name": "Black Truffle Pasta",
+      "price": 2000000.0,
+      "image": "blacktrufflepasta",
+      "category": "Pasta",
+      "description": "Black Truffle Pasta với nấm truffle đen và sốt bơ thơm ngon.",
+      "ingredients": "Mì Ý, Nấm truffle đen, Bơ, Parmesan"
+  },
+  {
+      "id": "55",
+      "restaurantId": "5",
+      "name": "Caviar and Blini",
+      "price": 2600000.0,
+      "image": "caviarblini",
+      "category": "Appetizer",
+      "description": "Caviar and Blini với hạt caviar đen, kem phô mai, và bánh blini mềm mịn.",
+      "ingredients": "Caviar đen, Bánh blini, Kem phô mai, Dưa leo"
+  },
+  {
+      "id": "56",
+      "restaurantId": "5",
+      "name": "Truffle Infused Mashed Potatoes",
+      "price": 1500000.0,
+      "image": "trufflemashedpotatoes",
+      "category": "Side Dish",
+      "description": "Truffle Infused Mashed Potatoes với khoai tây nghiền và hương vị truffle đặc trưng.",
+      "ingredients": "Khoai tây, Bơ, Nước cốt truffle, Sữa tươi"
+  },
+  {
+      "id": "57",
+      "restaurantId": "5",
+      "name": "Champagne Sorbet",
+      "price": 1200000.0,
+      "image": "champagnesorbet",
+      "category": "Desserts",
+      "description": "Champagne Sorbet với hương vị thanh mát của rượu Champagne, làm dịu vị sau bữa ăn.",
+      "ingredients": "Rượu Champagne, Đường, Nước lọc, Dưa hấu"
+  },
+  {
+      "id": "58",
+      "restaurantId": "5",
+      "name": "Chocolate Decadence",
+      "price": 1800000.0,
+      "image": "chocolatedecadence",
+      "category": "Desserts",
+      "description": "Chocolate Decadence là một món tráng miệng hấp dẫn với sô cô la đen đặc trưng.",
+      "ingredients": "Sô cô la đen, Bơ, Đường, Trứng"
+  },
+  {
+      "id": "59",
+      "restaurantId": "5",
+      "name": "Gold Leafed Macarons",
+      "price": 1600000.0,
+      "image": "goldleafedmacarons",
+      "category": "Desserts",
+      "description": "Gold Leafed Macarons với hạt vàng 24k, làm nổi bật vẻ sang trọng của món tráng miệng.",
+      "ingredients": "Bột hạt hạch, Đường, Trứng, Nhân kem"
+  },
+  {
+    "id": "60",
+    "restaurantId": "6",
+    "name": "Lẩu Riêu Cua",
+    "price": 180.0,
+    "image": "laurieucua",
+    "category": "Lẩu Hấp Dẫn",
+    "description": "Lẩu riêu cua truyền thống với cua sống và nước dùng đậm đà.",
+    "ingredients": "Cua sống, Bún, Rau sống, Nước dùng riêu"
+  },
+  {
+    "id": "61",
+    "restaurantId": "6",
+    "name": "Sushi Cuộn California",
+    "price": 120.0,
+    "image": "sushicuoncalifornia",
+    "category": "Sushi & Sashimi",
+    "description": "Cuộn sushi trứ danh với cua sống, dưa leo và bơ.",
+    "ingredients": "Cua sống, Dưa leo, Bơ, Gạo sushi, Tương ớt"
+  },
+  {
+    "id": "62",
+    "restaurantId": "6",
+    "name": "Sashimi Hải Sản Tươi",
+    "price": 150.0,
+    "image": "sashimihaisantuoi",
+    "category": "Sushi & Sashimi",
+    "description": "Sashimi hải sản tươi ngon với cá hồng, sò điệp và tôm.",
+    "ingredients": "Cá hồng, Sò điệp, Tôm, Nước sốt hải sản"
+  },
+  {
+    "id": "63",
+    "restaurantId": "6",
+    "name": "Lẩu Hải Sản Phong Cách Nhật Bản",
+    "price": 200.0,
+    "image": "lauhaisanphongcachnhatban",
+    "category": "Lẩu Hấp Dẫn",
+    "description": "Lẩu hải sản độc đáo với nước dùng miso và đầy ắp hải sản tươi ngon.",
+    "ingredients": "Nước dùng miso, Cá hồng, Mực, Tôm, Rau sống"
+  },
+  {
+    "id": "64",
+    "restaurantId": "6",
+    "name": "Bánh Flan Hải Sản",
+    "price": 80.0,
+    "image": "banhflanhaisan",
+    "category": "Tráng Miệng Đặc Sắc",
+    "description": "Bánh flan hải sản với lớp caramel ngọt ngào và hải sản tươi ngon.",
+    "ingredients": "Bánh flan, Caramel, Hải sản trang trí"
+  },
+  {
+    "id": "65",
+    "restaurantId": "6",
+    "name": "Mì Xào Hải Sản",
+    "price": 160.0,
+    "image": "mixaohaisan",
+    "category": "Hải Sản Tươi Sống",
+    "description": "Mì xào hải sản đậm đà với nước sốt hải sản và rau xanh tươi ngon.",
+    "ingredients": "Mì, Cá hồng, Sò điệp, Tôm, Rau xanh, Nước sốt hải sản"
+  },
+  {
+    "id": "66",
+    "restaurantId": "6",
+    "name": "Gỏi Cuốn Sushi Hải Sản",
+    "price": 90.0,
+    "image": "goicuonsushihaisan",
+    "category": "Sushi & Sashimi",
+    "description": "Gỏi cuốn sushi với hải sản tươi ngon, thơm ngon và béo ngậy.",
+    "ingredients": "Giấy bánh tráng, Cá hồng, Tôm, Sò điệp, Rau sống, Bơ"
+  },
+  {
+    "id": "67",
+    "restaurantId": "6",
+    "name": "Nước Ép Hải Sản",
+    "price": 50.0,
+    "image": "nuocephaisan",
+    "category": "Đồ Uống Mát Lạnh",
+    "description": "Nước ép hải sản tươi ngon, bổ dưỡng từ các loại hải sản.",
+    "ingredients": "Cá hồng, Tôm, Nước cốt dừa, Đường"
+  },
+  {
+    "id": "68",
+    "restaurantId": "6",
+    "name": "Cơm Chiên Hải Sản",
+    "price": 120.0,
+    "image": "comchienhaisan",
+    "category": "Hải Sản Tươi Sống",
+    "description": "Cơm chiên hải sản với hương vị đặc trưng và đầy đủ hải sản.",
+    "ingredients": "Cơm, Cá hồng, Mực, Tôm, Xà lách"
+  },
+  {
+    "id": "69",
+    "restaurantId": "6",
+    "name": "Bánh Tráng Cuốn Hải Sản",
+    "price": 70.0,
+    "image": "banhtrangcuonhaisan",
+    "category": "Sushi & Sashimi",
+    "description": "Bánh tráng cuốn với hải sản tươi ngon, giòn rụm.",
+    "ingredients": "Bánh tráng, Cá hồng, Tôm, Sò điệp, Rau sống"
+  },
+  {
+      "id": "70",
+      "restaurantId": "7",
+      "name": "Xôi Gia Đình Trứ Danh",
+      "price": 40.0,
+      "image": "xoigiadinhtrudanh",
+      "category": "Xôi Ngon",
+      "description": "Xôi trắng thơm phức kết hợp với nhân đậu xanh béo ngậy và giòn rụm.",
+      "ingredients": "Xôi, Đậu xanh, Dầu mè, Gia vị"
+  },
+  {
+      "id": "71",
+      "restaurantId": "7",
+      "name": "Bánh Mì Chảo Xôi Gia Đình",
+      "price": 30.0,
+      "image": "banhmichaoxoigiadinh",
+      "category": "Bánh Mì Chảo",
+      "description": "Bánh mì chảo giòn tan kết hợp với xôi gia đình thơm ngon.",
+      "ingredients": "Bánh mì chảo, Xôi gia đình, Gia vị"
+  },
+  {
+      "id": "72",
+      "restaurantId": "7",
+      "name": "Kem Xôi Hấp Dẫn",
+      "price": 50.0,
+      "image": "kemxoihapdan",
+      "category": "Kem Xôi Hấp Dẫn",
+      "description": "Kem xôi ngon mát kết hợp với các loại topping hấp dẫn.",
+      "ingredients": "Kem xôi, Đường, Topping trái cây"
+  },
+    {
+      "id": "73",
+      "restaurantId": "7",
+      "name": "Nước Mía Tươi Mát",
+      "price": 25.0,
+      "image": "nuocmiatuoimat",
+      "category": "Đồ Uống Mát Lạnh",
+      "description": "Nước mía tươi ngon, mát lạnh và thơm ngon.",
+      "ingredients": "Nước mía tươi"
+    },
+    {
+      "id": "74",
+      "restaurantId": "7",
+      "name": "Xôi Xéo Bánh Mì Chảo",
+      "price": 35.0,
+      "image": "xoixeobanhmichao",
+      "category": "Xôi Ngon",
+      "description": "Xôi xéo hấp dẫn kết hợp với bánh mì chảo giòn tan.",
+      "ingredients": "Xôi xéo, Bánh mì chảo, Gia vị"
+    },
+    {
+      "id": "75",
+      "restaurantId": "7",
+      "name": "Bánh Mì Chảo Xôi Gia Đình Xốt Chocolate",
+      "price": 40.0,
+      "image": "banhmichaoxoigiadinhxotchocolate",
+      "category": "Bánh Mì Chảo",
+      "description": "Bánh mì chảo xôi gia đình thơm ngon kèm xốt chocolate.",
+      "ingredients": "Bánh mì chảo, Xôi gia đình, Xốt chocolate"
+    },
+    {
+      "id": "76",
+      "restaurantId": "7",
+      "name": "Kem Xôi Vị Dừa",
+      "price": 45.0,
+      "image": "kemxoividua",
+      "category": "Kem Xôi Hấp Dẫn",
+      "description": "Kem xôi thơm ngon với vị dừa đặc trưng.",
+      "ingredients": "Kem xôi, Dừa tươi"
+    },
+    {
+      "id": "77",
+      "restaurantId": "7",
+      "name": "Xôi Gia Đình Khoai Lang",
+      "price": 35.0,
+      "image": "xoigiadinhkhoailang",
+      "category": "Xôi Ngon",
+      "description": "Xôi gia đình thơm ngon kết hợp với khoai lang tươi ngon.",
+      "ingredients": "Xôi gia đình, Khoai lang, Gia vị"
+    },
+    {
+      "id": "78",
+      "restaurantId": "7",
+      "name": "Bánh Mì Chảo Xôi Xéo",
+      "price": 30.0,
+      "image": "banhmichaoxoixeo",
+      "category": "Bánh Mì Chảo",
+      "description": "Bánh mì chảo xôi xéo hấp dẫn và giòn tan.",
+      "ingredients": "Bánh mì chảo, Xôi xéo, Gia vị"
+    },
+    {
+      "id": "79",
+      "restaurantId": "7",
+      "name": "Nước Mía Cam Đào",
+      "price": 30.0,
+      "image": "nuocmiacamdao",
+      "category": "Đồ Uống Mát Lạnh",
+      "description": "Nước mía tươi ngon kết hợp với cam và đào tạo nên đồ uống tuyệt vời.",
+      "ingredients": "Nước mía tươi, Cam, Đào"
+    },
+    {
+      "id": "80",
+      "restaurantId": "8",
+      "name": "Xôi Gia Đình Xốt Phô Mai",
+      "price": 45.0,
+      "image": "xoigiadinhxotphomai",
+      "category": "Xôi Ngon",
+      "description": "Xôi gia đình thơm ngon kèm xốt phô mai béo ngậy.",
+      "ingredients": "Xôi gia đình, Phô mai, Gia vị"
+    },
+    {
+      "id": "81",
+      "restaurantId": "8",
+      "name": "Bún Chả Hà Nội",
+      "price": 120.0,
+      "image": "bunchahanoidacbiet",
+      "category": "Đặc Sản Bắc Bộ",
+      "description": "Bún chả Hà Nội truyền thống với bánh tráng, thịt nướng và gia vị đặc trưng.",
+      "ingredients": "Bún, Thịt nướng, Nước mắm pha, Rau sống"
+    },
+    {
+      "id": "82",
+      "restaurantId": "8",
+      "name": "Nem Rán Đặc Biệt",
+      "price": 90.0,
+      "image": "nemrandacbiet",
+      "category": "Món Ăn Ngon Miệng",
+      "description": "Nem rán đặc biệt với nhân thịt ngon và vỏ giòn tan.",
+      "ingredients": "Thịt heo, Gia vị, Bánh tráng"
+    },
+    {
+      "id": "83",
+      "restaurantId": "8",
+      "name": "Phở Bò Đặc Sản",
+      "price": 150.0,
+      "image": "phobodacsan",
+      "category": "Đặc Sản Bắc Bộ",
+      "description": "Phở bò đặc sản với nước dùng ngon và thịt bò mềm dai.",
+      "ingredients": "Bún, Thịt bò, Gia vị, Rau sống"
+    },
+    {
+      "id": "84",
+      "restaurantId": "8",
+      "name": "Trà Đá Phố Xưa",
+      "price": 20.0,
+      "image": "tradaphoxua",
+      "category": "Đồ Uống Dân Dụ",
+      "description": "Trà đá thơm ngon, mát lạnh và pha đúng hương vị truyền thống.",
+      "ingredients": "Trà đen, Đường, Đá"
+    },
+    {
+      "id": "85",
+      "restaurantId": "8",
+      "name": "Bún Chả Cá Lăng",
+      "price": 130.0,
+      "image": "bunchacalang",
+      "category": "Hương Vị Truyền Thống",
+      "description": "Bún chả cá lăng với nước mắm Phan Thiết độc đáo và hương vị đặc trưng.",
+      "ingredients": "Bún, Cá lăng, Nước mắm Phan Thiết, Rau sống"
+    },
+    {
+      "id": "86",
+      "restaurantId": "8",
+      "name": "Bánh Mì Nem Nướng",
+      "price": 80.0,
+      "image": "banhminemnuong",
+      "category": "Món Ăn Ngon Miệng",
+      "description": "Bánh mì nem nướng giòn tan kèm theo nước mắm pha.",
+      "ingredients": "Bánh mì, Nem nướng, Nước mắm pha, Rau sống"
+    },
+    {
+      "id": "87",
+      "restaurantId": "8",
+      "name": "Phở Gà Quê Ngon",
+      "price": 140.0,
+      "image": "phogaquengon",
+      "category": "Đặc Sản Bắc Bộ",
+      "description": "Phở gà quê ngon với nước dùng ngon và thịt gà tươi ngon.",
+      "ingredients": "Bún, Thịt gà, Gia vị, Rau sống"
+    },
+    {
+      "id": "88",
+      "restaurantId": "8",
+      "name": "Trà Đá Sữa Phố Xưa",
+      "price": 25.0,
+      "image": "tradasuaphoxua",
+      "category": "Đồ Uống Dân Dụ",
+      "description": "Trà đá sữa thơm ngon, ngọt vừa và mát lạnh.",
+      "ingredients": "Trà đen, Sữa đặc, Đường, Đá"
+    },
+    {
+      "id": "89",
+      "restaurantId": "8",
+      "name": "Bánh Cuốn Nóng Hổi",
+      "price": 70.0,
+      "image": "banhcuonnonghoi",
+      "category": "Món Ăn Ngon Miệng",
+      "description": "Bánh cuốn nóng hổi với nhân thịt và gia vị hấp dẫn.",
+      "ingredients": "Bánh cuốn, Thịt, Gia vị, Rau sống"
+    },
+    {
+      "id": "90",
+      "restaurantId": "9",
+      "name": "Lẩu Cá Hồng Đặc Biệt",
+      "price": 280.0,
+      "image": "laucahongdacbiet",
+      "category": "Lẩu Hải Sản",
+      "description": "Lẩu cá hồng đặc biệt với hải sản tươi ngon, nước lẩu đậm đà.",
+      "ingredients": "Cá hồng, Cua biển, Sò điệp, Rau sống, Nước lẩu đặc biệt"
+    },
+    {
+      "id": "91",
+      "restaurantId": "9",
+      "name": "Cua Biển Nước Mía",
+      "price": 220.0,
+      "image": "cuabiennuocmia",
+      "category": "Hải Sản Tươi Ngon",
+      "description": "Cua biển tươi ngon kèm theo nước mía ngọt lịm.",
+      "ingredients": "Cua biển, Nước mía, Gia vị, Rau sống"
+    },
+    {
+      "id": "92",
+      "restaurantId": "9",
+      "name": "Sò Điệp Nước Mắm Phú Quốc",
+      "price": 180.0,
+      "image": "sodiepnướcmậmphuquoc",
+      "category": "Đặc Sản Biển",
+      "description": "Sò điệp tươi ngon hấp dẫn, ướp nước mắm Phú Quốc độc đáo.",
+      "ingredients": "Sò điệp, Nước mắm Phú Quốc, Gia vị, Rau sống"
+    },
+    {
+      "id": "93",
+      "restaurantId": "9",
+      "name": "Sinh Tố Trái Cây Tươi Mát",
+      "price": 45.0,
+      "image": "sinhtotraicaytuoimat",
+      "category": "Đồ Uống Tươi Mát",
+      "description": "Sinh tố trái cây tươi mát với hương vị tự nhiên.",
+      "ingredients": "Xoài, Dưa lưới, Dưa hấu, Nước đá"
+    },
+    {
+      "id": "94",
+      "restaurantId": "9",
+      "name": "Lẩu Mực Ống Biển",
+      "price": 250.0,
+      "image": "laumucongbien",
+      "category": "Lẩu Hải Sản",
+      "description": "Lẩu mực ống biển ngon độc đáo, hấp dẫn từ biển cả.",
+      "ingredients": "Mực ống, Rau sống, Nước lẩu đặc biệt"
+    },
+    {
+      "id": "95",
+      "restaurantId": "9",
+      "name": "Sò Điệp Hấp Gừng",
+      "price": 120.0,
+      "image": "sodiephapgung",
+      "category": "Hải Sản Tươi Ngon",
+      "description": "Sò điệp hấp gừng thơm ngon, bổ dưỡng.",
+      "ingredients": "Sò điệp, Gừng, Gia vị, Rau sống"
+    },
+    {
+      "id": "96",
+      "restaurantId": "9",
+      "name": "Lẩu Thái Cực Đỉnh",
+      "price": 300.0,
+      "image": "lauthaicucdinh",
+      "category": "Lẩu Hải Sản",
+      "description": "Lẩu Thái ngon đỉnh cao với hải sản tươi ngon và nước lẩu đậm đà.",
+      "ingredients": "Cá hồng, Mực ống, Sò điệp, Cua biển, Rau sống, Nước lẩu Thái"
+    },
+    {
+      "id": "97",
+      "restaurantId": "9",
+      "name": "Sinh Tố Dâu Tây",
+      "price": 50.0,
+      "image": "sinhtodautay",
+      "category": "Đồ Uống Tươi Mát",
+      "description": "Sinh tố dâu tây tươi mát, giàu vitamin.",
+      "ingredients": "Dâu tây, Sữa tươi, Đường, Đá"
+    },
+    {
+      "id": "98",
+      "restaurantId": "9",
+      "name": "Mực Nướng Mật Ong",
+      "price": 180.0,
+      "image": "mucnuongmatong",
+      "category": "Hải Sản Tươi Ngon",
+      "description": "Mực nướng mật ong thơm ngon và hấp dẫn.",
+      "ingredients": "Mực ống, Mật ong, Gia vị, Rau sống"
+    },
+    {
+      "id": "99",
+      "restaurantId": "9",
+      "name": "Nước Mía Lạnh",
+      "price": 30.0,
+      "image": "nuocmialanh",
+      "category": "Đồ Uống Mát Lạnh",
+      "description": "Nước mía lạnh mát, giải nhiệt hiệu quả.",
+      "ingredients": "Nước mía, Đá"
+    },
+    {
+      "id": "100",
+      "restaurantId": "10",
+      "name": "Cơm Gia Đình Hấp Dẫn",
+      "price": 120.0,
+      "image": "comgiadinhhapdan",
+      "category": "Bữa Cơm Gia Đình",
+      "description": "Bữa cơm gia đình hấp dẫn với các món ngon, dinh dưỡng.",
+      "ingredients": "Cơm, Món mặn, Rau sống, Canh"
+    },
+    {
+      "id": "101",
+      "restaurantId": "10",
+      "name": "Món Chiên Đặc Biệt",
+      "price": 150.0,
+      "image": "monchiendacbiet",
+      "category": "Món Chiên Hấp Dẫn",
+      "description": "Món chiên đặc biệt với hương vị độc đáo và giòn rụm.",
+      "ingredients": "Nguyên liệu chính chiên và gia vị"
+    },
+    {
+      "id": "102",
+      "restaurantId": "10",
+      "name": "Chè Trôi Nước Truyền Thống",
+      "price": 60.0,
+      "image": "chetroinuoctruyenthong",
+      "category": "Tráng Miệng Ngọt Ngào",
+      "description": "Chè trôi nước truyền thống ngon ngọt, thơm béo.",
+      "ingredients": "Nước cốt dừa, Đậu xanh, Gạo nếp, Đường"
+    },
+    {
+      "id": "103",
+      "restaurantId": "10",
+      "name": "Nước Ngọt Tự Nhiên",
+      "price": 25.0,
+      "image": "nuocngottunhien",
+      "category": "Đồ Uống Hấp Dẫn",
+      "description": "Nước ngọt tự nhiên, không chất bảo quản.",
+      "ingredients": "Nước, Đường, Đá"
+    },
+    {
+      "id": "104",
+      "restaurantId": "10",
+      "name": "Gà Chiên Giòn",
+      "price": 180.0,
+      "image": "gachiengion",
+      "category": "Món Chiên Hấp Dẫn",
+      "description": "Gà chiên giòn với lớp vỏ giòn tan, thịt mềm mịn.",
+      "ingredients": "Thịt gà, Bột chiên giòn, Gia vị"
+    },
+    {
+      "id": "105",
+      "restaurantId": "10",
+      "name": "Bánh Mì Que",
+      "price": 40.0,
+      "image": "banhmique",
+      "category": "Món Chiên Hấp Dẫn",
+      "description": "Bánh mì que giòn tan, thích hợp làm món ăn vặt.",
+      "ingredients": "Bột mì, Gia vị, Bơ"
+    },
+    {
+      "id": "106",
+      "restaurantId": "10",
+      "name": "Chè Sương Sa Hạt Lựu",
+      "price": 70.0,
+      "image": "chesuongsahatluu",
+      "category": "Tráng Miệng Ngọt Ngào",
+      "description": "Chè sương sa hạt lựu ngon mát, hấp dẫn.",
+      "ingredients": "Nước cốt dừa, Hạt lựu, Đường, Đậu xanh"
+    },
+    {
+      "id": "107",
+      "restaurantId": "10",
+      "name": "Nước Cam Tươi Mát",
+      "price": 35.0,
+      "image": "nuoccamtuoimat",
+      "category": "Đồ Uống Hấp Dẫn",
+      "description": "Nước cam tươi mát, giàu vitamin C.",
+      "ingredients": "Nước cam, Đường, Đá"
+    },
+    {
+      "id": "108",
+      "restaurantId": "10",
+      "name": "Bánh Gạo Xèo",
+      "price": 55.0,
+      "image": "banhgaoseo",
+      "category": "Món Chiên Hấp Dẫn",
+      "description": "Bánh gạo xèo giòn tan, hấp dẫn vị giác.",
+      "ingredients": "Bột gạo, Gia vị, Nhân mỡ"
+    },
+    {
+      "id": "109",
+      "restaurantId": "10",
+      "name": "Chè Bơ Xanh",
+      "price": 65.0,
+      "image": "cheboxanh",
+      "category": "Tráng Miệng Ngọt Ngào",
+      "description": "Chè bơ xanh ngon ngọt, thơm mát.",
+      "ingredients": "Nước cốt dừa, Bơ xanh, Đường, Đậu xanh"
+    }
+]

@@ -54,12 +54,13 @@ const RegisterPhoneScreen = ({navigation}) => {
       <View style={styles.headerContainer}>
         <Ionicons
           name="chevron-back-outline"
-          size={30}
+          color={Colors.DEFAULT_BLACK}
+          size={40}
           onPress={() => navigation.goBack()}
         />
         <Text style={styles.headerTitle}>Register Phone</Text>
       </View>
-      <Text style={styles.title}>Register Phone</Text>
+      <Text style={styles.title}>Register</Text>
       <Text style={styles.content}>
         Enter your registered phone number to login.
       </Text>
@@ -138,26 +139,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
   },
   headerTitle: {
-    fontSize: 20,
-    fontFamily: Fonts.POPPINS_MEDIUM,
-    lineHeight: 20 * 1.4,
+    fontSize: 29,
+    fontFamily: Fonts.POPPINS_BLACK,
+    color: Colors.DEFAULT_BLACK,
+    lineHeight: 20 * 4,
     width: Display.setWidth(80),
     textAlign: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 24,
     fontFamily: Fonts.POPPINS_MEDIUM,
+    color: Colors.DEFAULT_BLACK,
     lineHeight: 20 * 1.4,
-    marginTop: 50,
+    marginTop: 20,
     marginBottom: 10,
     marginHorizontal: 20,
   },
   content: {
     fontSize: 20,
     fontFamily: Fonts.POPPINS_MEDIUM,
+    color: Colors.DEFAULT_BLACK,
     marginTop: 10,
     marginBottom: 20,
     marginHorizontal: 20,

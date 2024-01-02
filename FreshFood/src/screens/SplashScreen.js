@@ -8,7 +8,7 @@ const SplashScreen = ({navigation}) => {
     <View style={styles.container}>
       <StatusBar
         barStyle="light-content"
-        backgroundColor={Colors.DEFAULT_YELLOW}
+        backgroundColor={Colors.DEFAULT_GREEN}
         translucent
       />
       <Image source={Images.PLATE} resizeMode="contain" style={styles.image} />
@@ -22,11 +22,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: Colors.DEFAULT_YELLOW,
+    backgroundColor: Colors.DEFAULT_GREEN,
   },
   image: {
-    height: (500),
-    width: (500),
+    height: (300),
+    width: (300),
   },
   titleText: {
     color: Colors.DEFAULT_WHITE,

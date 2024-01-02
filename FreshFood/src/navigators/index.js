@@ -9,12 +9,15 @@ import {
   ForgotPasswordScreen, 
   RegisterPhoneScreen, 
   VerificationScreen,
-  HomeScreen
+  HomeScreen,
+  RestaurantScreen,
+  FoodScreen,
 
 } from '../screens';
-
+import HomeTabs from "./BottomTabs"
 import {useSelector, useDispatch } from 'react-redux';
 import { GeneralAction } from '../actions';
+import { StorageService } from '../services';
 
 const Stack = createStackNavigator();
 
@@ -27,14 +30,15 @@ const Navigators = () => {
   useEffect(() => {
     dispatch(GeneralAction.appStart())
   }, []);
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         {isAppLoading ? (<Stack.Screen name='Splash' component={SplashScreen}/>
         ) : !token || token === '' || token === null ? (
           <>
-          {isFirstTimeUse && (<Stack.Screen name='Welcome' component={WelcomeScreen}/>)}
-          
+          {isFirstTimeUse && (<Stack.Screen name='Welcome' component={WelcomeScreen}/>)} 
+
           <Stack.Screen name='Signin' component={SigninScreen}/>
           <Stack.Screen name='Signup' component={SignupScreen}/>
           <Stack.Screen name='ForgotPassword' component={ForgotPasswordScreen}/>
@@ -42,7 +46,11 @@ const Navigators = () => {
           <Stack.Screen name='Verification' component={VerificationScreen}/>
           </>
         ) : (
-        <Stack.Screen name='Home' component={HomeScreen}/>
+          <>
+          <Stack.Screen name='HomeTabs' component={HomeTabs}/>
+          <Stack.Screen name='Restaurant' component={RestaurantScreen}/>
+          <Stack.Screen name='Food' component={FoodScreen}/>
+          </>
         )}
         
       </Stack.Navigator>

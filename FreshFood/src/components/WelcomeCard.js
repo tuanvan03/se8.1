@@ -27,11 +27,13 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 22,
-    fontFamily: Fonts.POPPINS_BOLD
+    fontFamily: Fonts.POPPINS_BOLD,
+    color: Colors.DEFAULT_BLACK,
   },
   contentText: {
     fontSize: 18,
     fontFamily: Fonts.POPPINS_LIGHT,
+    color: Colors.DEFAULT_BLACK,
     textAlign: 'center',
     marginHorizontal: 20,
   },

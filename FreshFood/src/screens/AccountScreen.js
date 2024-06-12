@@ -56,8 +56,8 @@ const AccountScreen = ({navigation}) => {
           <Image style={styles.profileImage} source={Images.AVATAR} />
         </View>
         <View style={styles.profileTextContainer}>
-          <Text style={styles.nameText}>Phạm Hoài Nam</Text>
-          <Text style={styles.emailText}>phamhoainam03@gmail.com</Text>
+          <Text style={styles.nameText}>TÊN NGƯỜI DÙNG</Text>
+          <Text style={styles.emailText}>TÊN GMAIL</Text>
         </View>
       </View>
       <View style={styles.menuContainer}>
